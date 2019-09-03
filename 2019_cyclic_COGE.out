@@ -1,0 +1,17 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Methodology}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{The u-w formulation}{section.2}% 3
+\BOOKMARK [3][-]{subsubsection.2.1.1}{The weak form of system equations for the u-w formulation}{subsection.2.1}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Implicit time integration scheme: Newton-Raphson algorithm}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.3}{Spatial discretization}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.4}{ Hyperelasto-plastic material model: the Generalized Plasticity }{section.2}% 7
+\BOOKMARK [1][-]{section.3}{Model calibration}{}% 8
+\BOOKMARK [2][-]{subsection.3.1}{Monotonic triaxial test: undrained conditions}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.2}{Monotonic consolidation test}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.3}{Monotonic triaxial test: drained conditions}{section.3}% 11
+\BOOKMARK [1][-]{section.4}{Cyclic triaxial test}{}% 12
+\BOOKMARK [2][-]{subsection.4.1}{Undrained conditions}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.2}{Drained conditions}{section.4}% 14
+\BOOKMARK [1][-]{section.5}{Conclusions}{}% 15
+\BOOKMARK [1][-]{appendix.A}{Initial conditions in the u-w formulation}{}% 16
+\BOOKMARK [1][-]{appendix.B}{Consistent Linearization}{}% 17

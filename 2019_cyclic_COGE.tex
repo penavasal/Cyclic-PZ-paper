@@ -1,4 +1,4 @@
-\documentclass[review]{elsarticle}
+\documentclass[preprint,12pt,a4paper]{elsarticle}
 
 \usepackage{lineno,hyperref}
 \usepackage{float}
@@ -61,8 +61,9 @@ Diego Manzanal$^a$,
 Miguel Mart\'in-Stickle$^{a}$,
 and  Manuel Pastor$^a$
  }
- \address
-{$^a$\orgdiv{ETSI Caminos, Canales y Puertos}, \orgname{Universidad Polit\'ectnica de Madrid, c. Prof. Aranguren 3}, \orgaddress{\state{28040 Madrid}, \country{Spain}}}
+ \address{
+ $^a$ ETSI Caminos, Canales y Puertos, Universidad Polit\'ectnica de Madrid.\\ c. Prof. Aranguren 3, 28040 Madrid, Spain
+}
 
 \begin{abstract}
 Several tools are appreciated when the behavior of permeable sands are to be modeled. First of all, since the movement of the water through the solid skeleton is not negligible, the hypotheses made in the $u-p_w$ formulation are not considered, since the acceleration of the fluid take an important place in the studied problem. Thus, the complete formulation plays a significant role in a dynamic problem, taking into account that the employment of an appropriate time integration scheme is essential. On the other hand, when considerable movements of the soil are represented, the combination of large deformation schemes within a meshfree framework is known to provide excellent results. In this way, the implementation of the Generalized Plasticity, suitable for modeling sands under dynamic loads, is presented in this work in a finite deformation framework for the first time.
@@ -85,9 +86,9 @@ MAS SOBRE PZ
 
 MAS SOBRE SANDS-CYCLIC-DRAINED-UNDRAINED
 
-On the other hand, since sands are to be modeled, the intuition make us think that, as the permeability tends to be high, the relative movement of the water phase with respect to the solid one would not be negligible when a dynamic problem, such as a high frequency loading, takes place. Thus, the employment of the traditional $u-p_w$ formulation of the governing equations, even in the dynamic form, is not sufficient to capture the correct acceleration of the water. Zienkiewicz~\texit{et al.}~\cite{zienkiewicz1980} made an assessment of the suitability of the usage of the complete formulation depending on the frequency of the loading and the permeability. The dynamic consolidation problems studied in that research were analyzed by Navas~\texit{et al.}~\cite{Navas2016b} in the elastic range and also by L\'opez-Querol~\texit{et al.}~\cite{LopezQuerol2006} within the Generalized Plasticity model for small strains. Therefore, the extension of such formulation to a large deformation framework, within the $u-w$ formulation, is an unquestionable improvement in the field of the cyclic problems of saturated sands. Moreover, the employment of well known meshfree techniques is well indicated when large deformations are involved.
+On the other hand, since sands are to be modeled, the intuition make us think that, as the permeability tends to be high, the relative movement of the water phase with respect to the solid one would not be negligible when a dynamic problem, such as a high frequency loading, takes place. Thus, the employment of the traditional $u-p_w$ formulation of the governing equations, even in the dynamic form, is not sufficient to capture the correct acceleration of the water. Zienkiewicz ~\textit{et al.} ~\cite{zienkiewicz1980} made an assessment of the suitability of the usage of the complete formulation depending on the frequency of the loading and the permeability. The dynamic consolidation problems studied in that research were analyzed by Navas ~\textit{et al.} ~\cite{Navas2016b} in the elastic range and also by L\'opez-Querol~\textit{et al.} ~\cite{LopezQuerol2006} within the Generalized Plasticity model for small strains. Therefore, the extension of such formulation to a large deformation framework, within the $u-w$ formulation, is an unquestionable improvement in the field of the cyclic problems of saturated sands. Moreover, the employment of well known meshfree techniques is well indicated when large deformations are involved.
 
-This paper is organized as follows:  In chapter \ref{sec:2} the methodology is presented, being divided in four subsections where the $u-w$ formulation, the time integration scheme, the spatial discretization and the constitutive model are described; the model is calibrated in chapter \ref{sec:3}, being analyzed the monotonic triaxial behavior under drained conditions test in chapter \ref{sec:4} and the cyclic one in chapter \ref{sec:5} for both undrained and drained conditions. Finally, conclusions are presented in chapter \ref{sec:6}.
+This paper is organized as follows:  In chapter \ref{sec:2} the methodology is presented, being divided in four subsections where the $u-w$ formulation, the time integration scheme, the spatial discretization and the constitutive model are described; the model is calibrated in chapter \ref{sec:3}, being analyzed the monotonic triaxial behavior under drained and undrained conditions test and the cyclic one in chapter \ref{sec:4} for both conditions also. Finally, conclusions are presented in chapter \ref{sec:5}.
 
 \section{Methodology}\label{sec:2}
 \subsection{The $u-w$ formulation}
@@ -278,7 +279,7 @@ As it was mentioned, the main contribution of this work in the sense of the cons
 \end{eqnarray}
 where the superscript $p$ represents the material point where is calculated and $Nb$ the neighbor nodes of this material point. The deformation gradient can be calculated as:
 \begin{equation}
-\mathbf{F}_{k+1} &=& \Delta \mathbf{F}_{k+1} \mathbf{F}_{k} 
+\mathbf{F}_{k+1} = \Delta \mathbf{F}_{k+1} \mathbf{F}_{k} 
 \end{equation}
 where $k$ and $k+1$ depict the previous and the current step.
 
@@ -320,7 +321,29 @@ Invariants $p$ and $q$ can be calculated from this function taking into account 
 
 
 \begin{equation}\label{PZ1}
-\left[ \begin{array}{c}{p} \\ {q}\end{array}\right]=\left[\begin{array}{cc}{\frac{\partial^{2} \psi}{\partial \varepsilon_{v}^{\mathrm{e}}^{2}} &  \frac{\partial^{2} \psi}{\partial\varepsilon_{v}^\mathrm{e} \partial\varepsilon_{s}^\mathrm{e}} \\  \frac{\partial^{2} \psi}{\partial\varepsilon_{s}^\mathrm{e} \partial\varepsilon_{v}^\mathrm{e}} & \frac{\partial^{2} \psi}{\partial\varepsilon_{s}^\mathrm{e}^{2}}\end{array}\right]\left[\begin{array}{c}{\varepsilon_{v}^{\mathrm{e}}} \\ \varepsilon_{s}^{\mathrm{e}}}\end{array}\right]
+\left[ 
+\begin{array}{c}
+p \\ 
+q
+\end{array}
+\right]=
+\left[\begin{array}{cc}
+\frac{\partial^{2} \psi}{\partial \varepsilon_{v}^{\mathrm{e}\,2}}
+ &  
+ \frac{\partial^{2} \psi}{\partial\varepsilon_{v}^\mathrm{e} \partial\varepsilon_{s}^\mathrm{e}} 
+ \\
+ \frac{\partial^{2} \psi}{\partial\varepsilon_{s}^\mathrm{e} \partial\varepsilon_{v}^\mathrm{e}} 
+ & 
+\frac{\partial^{2} \psi}{\partial\varepsilon_{s}^\mathrm{e\,2}}
+\end{array}
+\right]
+\left[
+\begin{array}{c}
+\varepsilon_{v}^{\mathrm{e}}
+ \\ 
+\varepsilon_{s}^{\mathrm{e}}
+\end{array}
+\right]
 \end{equation}
 
 Once defined the hyperelatic part, the plastic behavior is described only with the normal vectors to the yield and the potential surfaces, given  respectively by $n$ and $n_{g}$. The potential vector take different direction depending on the loading or unloading criteria. In the $p, q, \theta $
@@ -339,7 +362,7 @@ where the components are described in Table \ref{tab2}.
         $n_{g,L}^{p} =\frac{d_{g}}{\sqrt{1+d_{g}^{2}}}$
         \\ 
          &
-        $n_{g,U}^{p} = -\absn(n_{g,L}^{p})$ \\
+        $n_{g,U}^{p} = -\Vert n_{g,L}^{p} \Vert$ \\
         $n^{q} =\frac{\pm 1}{\sqrt{1+d_{f}^{2}}}$ &
         $n_{g}^{q} = \frac{\pm 1}{\sqrt{1+d_{g}^{2}}}$ \\  
         $n^{\theta} =-\frac{q M_{f} \cos 3 \theta}{2 \sqrt{1+d_{f}^{2}}}$ &
@@ -410,9 +433,9 @@ where $\boldsymbol{1}$ is the fourth order identity matrix.
 
 \section{Model calibration}
 \label{sec:3}
-The calibration consist of the simulation of several tests, under monotonic loading conditions, 
+The calibration consist of the simulation of several tests, under monotonic loading conditions, of a determined soil, comparing to reference undrained results. For the drained part, the goal is discovering the drainage velocity, being also analyzed the behavior of the soil under drained triaxial conditions. These three results are presented following.
 
-\section{Monotonic triaxial test: undrained conditions}
+\subsection{Monotonic triaxial test: undrained conditions}
 \label{sec:31}
 The proposed methodology has to be validated first. A triaxial test with dynamic conditions is proposed since there are several results of this kind of test in literature~\cite{PastorZC:90,Zienkiewicz99}. In Fig.~\ref{fig_Geo} a scheme of this test is presented. Because of the symmetry only one quarter of its geometry can be modeled. Thus, boundaries $\Gamma_1$ and $\Gamma_2$ have to constraint the displacement of the solid and fluid in the perpendicular direction. Boundary $\Gamma_3$ is free to move, although the fluid cannot dissipate in that boundary since there is a membrane to avoid it.
 
@@ -459,10 +482,25 @@ The first test to validate is an undrained monotonic test. The material employed
 	\end{tabular}
 \end{table}
 
-\section{Monotonic consolidation test}
+\subsection{Monotonic consolidation test}
 \label{sec:32}
+Once the behavior of the constitutive model is validated, it is time to verify the performance of the Biot's formulation when the displacement of the water comes into place. Thus, an oedometer, with the geometry proposed in Fig.~\ref{fig_Geo}, is simulated in order to check the consolidation time. A permeability of 1e-6 m/s and a porosity of 0.43 are employed within this simulation. A pressure of 200 kPa is applied to the soil during 0.05 s, point that we consider the consolidation starts. The settlement is obtained from the beginning of the process. The first second of the simulation is presented in Fig.~\ref{fig_conso} for both pore pressure and settlement.
+%%%%%%
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{Figs/conso.pdf}
+\caption{Consolidation results: a) Pore pressure, b) Settlement.}
+\label{fig_conso}
+\end{figure}
+%%%%%%
 
-\section{Monotonic triaxial test: drained conditions}
+Experimentally, it is demonstrated that the maximum strain rate to obtain drained conditions in a drained triaxial test can be obtained with the following equation:
+
+\begin{equation}
+v_{load}=\frac{\varepsilon_f H}{12.7 \, t_{100}}
+\end{equation}
+
+\subsection{Monotonic triaxial test: drained conditions}
 \label{sec:33}
 
 \section{Cyclic triaxial test}
@@ -484,9 +522,8 @@ The results show excellent performance of the aforementioned tools. Different be
 
 The good results obtained in this research encourage us to extend this work in several directions. First of all, since only triaxial tests were carried out, more sophisticated experimental tests as well as real field cases have to be studied with the proposed methodology. On the other hand, several improvements can be made to the constitutive model. The density of the sand in chapter 3 was a relationship between $M_f$ and $M_g$, meanwhile recent developments of the Generalized Plasticity proposed by Manzanal \textit{et al.}~\cite{Manzanal2011,Manzanal2011a} made the densification process in the Generalized Plasticity model more elegant, being able to reproduce the behavior of the soil of the chapter 5.2 easily. Finally, as the methodology is able to capture dynamic behavior, makes sense that the constitutive model were able to capture different behaviors depending on the loading rate with some viscoplastic adjustment, which is something hardly explored within this model. 
 
-\begin{acknowledgements}
+\section*{Acknowledgements}
 The  financial support to develop this research from the \textit{Ministerio de Ciencia e Innovaci\'on}, under Grant Number, BIA-XXXXX is greatly appreciated. The first author also acknowledges the fellowship Juan de la Cierva FJCI-2017-31544.
-\end{acknowledgements}
 
 \appendix
 %\addappheadtotoc

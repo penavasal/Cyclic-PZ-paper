@@ -1,0 +1,131 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{PastorZC:90}
+M.~T. Pastor, O.~C. Zienkiewicz, A.~H.~C. Chan, {Generalized plasticity and the
+  modelling of soil behaviour}, Int. J. Numer. Anal. Methods Geomech. 14 (1990)
+  151--190.
+\newblock \href {http://dx.doi.org/10.1016/j.ocecoaman.2012.02.008}
+  {\path{doi:10.1016/j.ocecoaman.2012.02.008}}.
+
+\bibitem{Mira2009}
+P.~Mira, L.~Tonni, M.~T. Pastor, J.~A. Fern, {A generalized midpoint algorithm
+  for the integration of a generalized plasticity model for sands} 77 (2009)
+  1201--1223.
+\newblock \href {http://dx.doi.org/10.1002/nme} {\path{doi:10.1002/nme}}.
+
+\bibitem{Manzanal2011}
+D.~G. Manzanal, J.~A. {Fern{\'{a}}ndez Merodo}, M.~T. Pastor, {Generalized
+  plasticity state parameter-based model for saturated and unsaturated soils.
+  Part 1: Saturated state}, Int. J. Numer. Anal. Methods Geomech. 35 (2011)
+  1347--1362.
+\newblock \href {http://arxiv.org/abs/nag.2347} {\path{arXiv:nag.2347}}, \href
+  {http://dx.doi.org/10.1002/nag} {\path{doi:10.1002/nag}}.
+
+\bibitem{Manzanal2011a}
+D.~G. Manzanal, M.~T. Pastor, J.~A. {Fern{\'{a}}ndez Merodo}, {Generalized
+  plasticity state parameter-based model for saturated and unsaturated soils.
+  Part II: Unsaturated soil modeling}, Int. J. Numer. Anal. Methods Geomech. 35
+  (2011) 1899--1917.
+\newblock \href {http://arxiv.org/abs/nag.2347} {\path{arXiv:nag.2347}}, \href
+  {http://dx.doi.org/10.1002/nag} {\path{doi:10.1002/nag}}.
+
+\bibitem{zienkiewicz1980}
+O.~C. Zienkiewicz, C.~T. Chang, P.~Bettes, {Drained, undrained, consolidating
+  and dynamic behaviour assumptions in soils}, G{\'{e}}otechnique 30~(4) (1980)
+  385--395.
+\newblock \href {http://dx.doi.org/10.1016/j.ocecoaman.2012.02.008}
+  {\path{doi:10.1016/j.ocecoaman.2012.02.008}}.
+
+\bibitem{Navas2016b}
+P.~Navas, R.~C. Yu, S.~L{\'{o}}pez-Querol, B.~Li, {Dynamic consolidation
+  problems in saturated soils solved through u-w formulation in a {\{}LME{\}}
+  meshfree framework}, Comput. Geotech. 79 (2016) 55--72.
+\newblock \href {http://dx.doi.org/10.1016/j.compgeo.2016.05.021}
+  {\path{doi:10.1016/j.compgeo.2016.05.021}}.
+
+\bibitem{LopezQuerol2006}
+S.~L{\'{o}}pez-Querol, {Modelizaci{\'{o}}n geomec{\'{a}}nica de los procesos de
+  densificaci{\'{o}}n, licuefacci{\'{o}}n y movilidad c{\'{i}}clica de suelos
+  granulares sometidos a solicitaciones din{\'{a}}micas}, Ph.D. thesis,
+  University of Castilla-La Mancha, Ciudad Real, Spain (2006).
+
+\bibitem{LewisSchrefler98}
+R.~W. Lewis, B.~A. Schrefler, {The finite element method in the static and
+  dynamic deformation and consolidation of porous media.}, John Wiley {\&} Sons
+  Ltd., 1998.
+
+\bibitem{LopezQuerol2008}
+S.~L{\'{o}}pez-Querol, J.~A. {Fern{\'{a}}ndez Merodo}, P.~Mira, M.~T. Pastor,
+  {Numerical modelling of dynamic consolidation on granular soils}, Int. J.
+  Numer. Anal. Methods Geomech. 32 (2008) 1431--1457.
+\newblock \href {http://arxiv.org/abs/nag.2347} {\path{arXiv:nag.2347}}, \href
+  {http://dx.doi.org/10.1002/nag} {\path{doi:10.1002/nag}}.
+
+\bibitem{Zienkiewicz99}
+O.~C. Zienkiewicz, A.~H.~C. Chan, M.~T. Pastor, B.~A. Schrefler, T.~Shiomi,
+  {Computational Geomechanics}, John Wiley, UK, 1999.
+
+\bibitem{Terzaghi1925}
+K.~V. Terzaghi, {Principles of Soil Mechanics}, Eng. News-Record 95 (1925)
+  19--27.
+
+\bibitem{Kontoe2006}
+S.~Kontoe,
+  \href{http://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.435799}{{Developement
+  of time integration schemes and advanced boundary conditions for dynamic
+  geotechnical analysis}}, Ph.D. thesis (2006).
+\newline\urlprefix\url{http://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.435799}
+
+\bibitem{wriggers:08}
+P.~Wriggers, {Nonlinear Finite Element Methods}, Springer, 2008.
+
+\bibitem{Navas:17c}
+P.~Navas, L.~Sanavia, S.~L{\'{o}}pez-Querol, R.~C. Yu,
+  \href{https://doi.org/10.1007/s00466-017-1524-y}{u-w formulation for dynamic
+  problems in large deformation regime solved through an implicit meshfree
+  scheme.}, Comput. Mech. Published~(4) (2017)
+  https://doi.org/10.1007/s00466--017--1524--y.
+\newblock \href {http://dx.doi.org/10.1007/s00466-017-1524-y}
+  {\path{doi:10.1007/s00466-017-1524-y}}.
+\newline\urlprefix\url{https://doi.org/10.1007/s00466-017-1524-y}
+
+\bibitem{arroyo2006}
+M.~Arroyo, M.~Ortiz, {Local maximum-entropy approximation schemes: a seamless
+  bridge between finite elements and meshfree methods}, Int. J. Numer. Methods
+  Eng. 65~(13) (2006) 2167--2202.
+\newblock \href {http://dx.doi.org/10.1002/nme.1534}
+  {\path{doi:10.1002/nme.1534}}.
+
+\bibitem{Navas2018}
+P.~Navas, S.~L{\'{o}}pez-Querol, R.~C. Yu, M.~T. Pastor, {Optimal
+  transportation meshfree method in geotechnical engineering problems under
+  large deformation regime}, Int. J. Numer. Methods Eng. 115~(10) (2018)
+  1217--1240.
+\newblock \href {http://dx.doi.org/10.1002/nme.5841}
+  {\path{doi:10.1002/nme.5841}}.
+
+\bibitem{cuitino:92}
+A.~Cuiti{\~{n}}o, M.~Ortiz, {A material-independent method for extending stress
+  update algotithms from small-strain plasticity to finite plasticity with
+  multiplicative kinematics}, Eng. Comput. 9 (1992) 437--451.
+
+\bibitem{Houlsby2005}
+G.~T. Houlsby, A.~Amorosi, E.~Rojas, {Elastic moduli of soils dependent on
+  pressure: a hyperelastic formulation}, G{\'{e}}otechnique 55~(5) (2005)
+  383--392.
+\newblock \href {http://dx.doi.org/10.1680/geot.55.5.383.66021}
+  {\path{doi:10.1680/geot.55.5.383.66021}}.
+
+\bibitem{Santagiuliana2006}
+R.~Santagiuliana, B.~A. Schrefler, {Enhancing the Bolzon-Schrefler-Zienkiewicz
+  constitutive model for partially saturated soil}, Transp. Porous Media 65~(1)
+  (2006) 1--30.
+\newblock \href {http://dx.doi.org/10.1007/s11242-005-6083-6}
+  {\path{doi:10.1007/s11242-005-6083-6}}.
+
+\end{thebibliography}

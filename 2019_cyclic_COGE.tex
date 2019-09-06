@@ -118,7 +118,7 @@ Q = \left[ \frac{1-n}{K_s} + \frac{n}{K_w} \right]^{-1}.
 \end{equation}
 
 %%%%%
-Equation \eqref{eq_uw10} can be integrated over time to obtain the pore pressure as
+In the whole research, the employment of $K_w=1e4\,$MPa, $K_s=1e36\,$MPa, $\rho_s=2600 \, kg/m^3$ and $\rho_s=1000 \, kg/m^3$ has been considered. Equation \eqref{eq_uw10} can be integrated over time to obtain the pore pressure as
 \begin{equation}\label{eq_uw15}
 p_w=-Q \left[ \mbox{div} (\boldsymbol{u}) + \mbox{div} (\boldsymbol{w}) \right] +p_{w_0},
 \end{equation}
@@ -380,7 +380,7 @@ d \boldsymbol{\varepsilon}^{p}=\frac{1}{H_{L / U}}\left(\mathbf{n}_{g L / U} \ot
 Although this assertion is valid for any space, in our case, $d \boldsymbol{\sigma}$ and $d \boldsymbol{\varepsilon}^{p}$ are defined in the triaxial space. On the other hand, $H_{L / U}$ is called the plastic modulus, which is defined in a different way depending on the loading or unloading conditions. In the first case it es plotted as:
 \begin{equation}
 H=p\,H_{0}  H_{f}\left(H_{v}+H_{s}\right) H_{\mathrm{DM}}
-\end{equation}
+\end{equation}\label{Eq_H}
 where $H_0$ is a material parameter that Schrefler and coworkers~\cite{Santagiuliana2006} related to the traditional slopes of the plastic and elastic curves in the $p-e$ curve:
 \begin{equation}
 H_{0}=\frac{1+e_{0}}{\lambda-k}=\frac{1}{\lambda^*-k^*}
@@ -450,37 +450,48 @@ The proposed methodology has to be validated first. A triaxial test with dynamic
 
 Boundary $\Gamma_4$ will change depending on the problem to be modeled. About the soil, either the displacement can be imposed or the pressure, if we want to reach a desire value of the $q$. On the other hand, the impermeability of this boundary will be given due to the drained or undrained condition of the reproduced test.
 
-The first test to validate is an undrained monotonic test. The material employed within these tests was a sand studied by Castro (CITA) that, afterwards, was calibrate for the Generalized Plasticity model~\cite{PastorZC:90,Zienkiewicz99}. The parameters that were calibrated are presented in Table~\ref{tab3}. The main 
-
+The first test to validate is an undrained monotonic test. The material employed within these tests was a sand studied by Castro (CITA) that, afterwards, was calibrated for the Generalized Plasticity model~\cite{PastorZC:90,Zienkiewicz99}. The parameters that were calibrated are presented in Table~\ref{tab3}. Four different sands are studied, depending on the density state.
 
 \begin{table}
-\caption{\label{tab3} Material properties employed in the different studied problems.} 
+\caption{\label{tab3} Material properties employed in the different studied problems. $\alpha_f=\alpha_g=0.45$} 
 \centering
-	\begin{tabular}{l|l}
-	& Section 3 \\
+	\begin{tabular}{l|l|l|l|l|l}
+	& 3.1 A  & 3.1 B & 3.1 C & 3.1 D & 3.2-3.3 \\
 	\hline
-        $K_{0} \left[ \text{MPa} \right]$  & 35
+        $K_{0} \left[ \text{MPa} \right]$  & 35 & 35 & 35 & 35 & 35
         \\ 
-        $G_{0} \left[ \text{MPa} \right]$ & 52.5
+        $G_{0} \left[ \text{MPa} \right]$ & 52.5 & 52.5 & 52.5 & 52.5 & 65
         \\
-        \(M_{f}\)  & 0.4
+        \(M_{f}\)  & 0.4 & 0.545 & 0.57 & 0.72 & 0.5
         \\
-        \(M_{g}\) & 1.5
+        \(M_{g}\) & 1.5 & 1.32 & 1.12 & 1.03 & 1.03
         \\
-        \(H_{0}\) & 350
+        \(H_{0}\) & 350 & 350 & 350 & 350 & 350
         \\
-        \(\beta_{0}\) & 4.2
+        \(\beta_{0}\) & 4.2 & 4.2 & 4.2 & 4.2 & 4.2
         \\
-        \(\beta_{1}\) & 0.2
+        \(\beta_{1}\) & 0.2 & 0.2 & 0.2 & 0.2 & 0.2
         \\
-        \( \gamma_{u}\)  & -
+        \( \gamma_{u}\)  & - & - & - & - & - 
         \\
-        \(H_{u 0}\) & -
+        \(H_{u 0}\) & - & - & - & - & - 
         \\
-        \( \gamma_{u}\)  & -
+        \( \gamma_{u}\)  & - & - & - & -
         \\
 	\end{tabular}
 \end{table}
+
+In this validation test boundary $\Gamma_4$ is impermeable, what makes the experiment undrained. The soil is deformed until around 8 \%, which can considered a considerable deformable range. In Fig.~\ref{fig_undrained} the obtained results are depicted. The left image shows the comparison between the theoretical results proposed by Pastor~\textit{et al.}~\cite{PastorZC:90} for the different results of the deviatoric stress against the ones obtained with the proposed methodology, observing very good agreement for the 4 studied soils. This agreement is also achieved in the stress paths (right column).
+
+%%%%%%
+\begin{figure}
+\centering
+\includegraphics[width=0.99\textwidth]{Figs/undrained.pdf}
+\caption{Comparison between the results of the undrained triaxial test for the 4 different studied soils obtained by Pastor~\textit{et al.}~\cite{PastorZC:90} and with the proposed methodology: stress-strain (left) and stress path (right).}
+\label{fig_undrained}
+\end{figure}
+%%%%%%
+
 
 \subsection{Monotonic consolidation test}
 \label{sec:32}
@@ -500,18 +511,43 @@ Experimentally, it is demonstrated that the maximum strain rate to obtain draine
 v_{load}=\frac{\varepsilon_f H}{12.7 \, t_{100}}
 \end{equation}
 
+where $\varepsilon_f H$ is a measurement of the shortening of the specimen and $t_{100}$ is the consolidation time. Since 100\% is not possible to be reached, a 95 \% of the dissipation of the pore pressure has been considered, which in Fig.~\ref{fig_conso} is observed to be around 0.48 s. Since the shortening is 0.08 mm, the velocity in which the whole specimen is able to dissipate all the excess pore water pressure has to be slower than 0.013 mm/s.
+
 \subsection{Monotonic triaxial test: drained conditions}
 \label{sec:33}
 
+%%%%%%%%
 \section{Cyclic triaxial test}
 \label{sec:4}
+The Generalized Plasticity model is well-known in the modeling of cyclic behavior since, explicitly, the stress state is incorporated to the yield and potential surface normal vectors. In the proposed methodology, the trend is captured in advance by the $\theta$ angle of the strain state. The good performance of the proposed methodology is verified following with the simulated drained and undrained triaxial tests.
 
 \subsection{Undrained conditions}
 \label{subsec:41}
 
+
 \subsection{Drained conditions}
 \label{subsec:42}
+The typical behavior that is seen when drained conditions are imposed in the triaxial test shows a densification. However, the proposed material model is unable to reproduce this behavior without multiplying to $H$, Eq.~\eqref{Eq_H}, the term $H_d$, a densification measurement, which is calculated as follows:
+\begin{equation}
+H_{d}=\exp \left(-\gamma_{d} \; \varepsilon_{v}^{\mathrm{p}} \right)
+\end{equation}
+where $\varepsilon_{v}^{\mathrm{p}}$ is the cumulative volumetric plastic strain and $\gamma_{d}$ is a material parameter, which is employed in this research as 400. The higher is this parameter, the quicker the densification is obtained. This technique was proposed by Zienkiewicz and coworkers~\cite{Zienkiewicz99}.
 
+The test consist of varying the deviatoric load between 300 kPa and 150 kPa, what gives us a variation of $\eta=p/q$, of around 0.2 and -0.2. The employed parameters are given in TABLE XXX. In Fig.~\ref{fig_c_drained} the results with and without the employement of the densification parameter, which is equivalent to employ $\gamma_{d}=0$, are depicted. The goal is the reproduction of the typical behavior shown in drained sands, already presented by Bahda~\cite{bahda1997} and Zienkiewicz and coworkers~\cite{Zienkiewicz99}. 
+
+%%%%%%
+\begin{figure}
+\centering
+\includegraphics[width=0.95\textwidth]{Figs/ciclo_drained.pdf}
+\caption{Results of the cyclic triaxial tests under drained conditions without, a), and with, b), the densification parameter $Hd$.}
+\label{fig_c_drained}
+\end{figure}
+%%%%%%
+
+In the first raw of the Fig.~\ref{fig_c_drained} the results without densification are presented. It can be seen how there is an increasing of the volumetric strain with the increasing of the numbers of cycles of loading. However, the increment of volumetric strain is equal in every cycle, not observing any hardening of the material, which is not the sought behavior. Thus, in the second raw, we can observe how the increment of $\varepsilon_{v}$ is reduced in every cycle, since while the $\varepsilon_{v}^{\mathrm{p}}$ increases, the value of $H$ and, therefore, the stiffness of the material, grows. After the same number of cycles, a lower value of $\varepsilon_{v}$ is obtained.
+
+
+%%%%%
 \section{Conclusions}
 \label{sec:5}
 

@@ -458,25 +458,25 @@ The first test to validate is an undrained monotonic test. The material employed
 	\begin{tabular}{c|c|c|c|c|c|c|c|c}
 	& 3.1 A  & 3.1 B & 3.1 C & 3.1 D & 3.2-3.3 & 4.1-1 & 4.1-2 & 4.2 \\
 	\hline
-        $K_{0} \left[ \text{MPa} \right]$  & 35 & 35 & 35 & 35 & 35 & 35 & 65 &
+        $K_{0} \left[ \text{MPa} \right]$  & 35 & 35 & 35 & 35 & 35 & 35 & 65 & 40
         \\ 
-        $G_{0} \left[ \text{MPa} \right]$ & 52.5 & 52.5 & 52.5 & 52.5 & 65 & 52.5 & 30 &
+        $G_{0} \left[ \text{MPa} \right]$ & 52.5 & 52.5 & 52.5 & 52.5 & 65 & 52.5 & 30 & 16
         \\
-        \(M_{f}\)  & 0.4 & 0.545 & 0.57 & 0.72 & 0.5 & 0.4 & 0.71 &
+        \(M_{f}\)  & 0.4 & 0.545 & 0.57 & 0.72 & 0.5 & 0.4 & 0.71 & 0.6
         \\
-        \(M_{g}\) & 1.5 & 1.32 & 1.12 & 1.03 & 1.03 & 1.5 & 1.5 & 
+        \(M_{g}\) & 1.5 & 1.32 & 1.12 & 1.03 & 1.03 & 1.5 & 1.5 & 1.4
         \\
-        \(H_{0}\) & 350 & 350 & 350 & 350 & 350  & 350 & 800 &
+        \(H_{0}\) & 350 & 350 & 350 & 350 & 350  & 350 & 800 & 800
         \\
-        \(\beta_{0}\) & 4.2 & 4.2 & 4.2 & 4.2 & 4.2 & 4.2 & 3.8 & 
+        \(\beta_{0}\) & 4.2 & 4.2 & 4.2 & 4.2 & 4.2 & 4.2 & 3.8 & 5.0
         \\
-        \(\beta_{1}\) & 0.2 & 0.2 & 0.2 & 0.2 & 0.2 & 0.2 & 0.16 &
+        \(\beta_{1}\) & 0.2 & 0.2 & 0.2 & 0.2 & 0.2 & 0.2 & 0.16 & 0.2
         \\
-        \( \gamma\)  & - & - & - & - & - & 4 & 1 & 
+        \( \gamma\)  & - & - & - & - & - & 4 & 1 & 1
         \\
-        \(H_{u 0}\) & - & - & - & - & - & 600 & 250 &
+        \(H_{u 0}\) & - & - & - & - & - & 600 & 250 & 2000
         \\
-        \( \gamma_{u}\)  & - & - & - & - & 2 & 5 & 
+        \( \gamma_{u}\)  & - & - & - & - & - & 2 & 5 & 2
         \\
 	\end{tabular}
 \end{table}
@@ -580,7 +580,7 @@ The problem shows that, after several cycles, the soil loses the initial stiffne
 %%%%%%
 
 
-On the other hand, in the second test the whole cycle is assessed, \textit{i.e.} compression loading, compression unloading, tension loading, tension unloading. A different soil from the previous test is employed, being the parameters shown in Table~\ref{tab3}, column 4.1-2. The obtained stress path  is plotted in Fig.~\ref{fig_c_undrained2}.B, which is equivalent to the obtained by Pastor~\textit{et al.}~\cite{PastorZC:90}.  This path is obtained independently to the loading rate. However, the stress-deformation curve is dependent on the loading rate, as it is observed in Fig.~\ref{fig_c_undrained2}.A. In dashed line it is plotted the curve obtained by increasing the angular frequency. \textcolor{red}{The reason can be that the excess pore water pressure generated,  when the phonemana is quick, cannot be stabilized and provoke a liquefaction of the material that enlarges the strain.}
+On the other hand, in the second test the whole cycle is assessed, \textit{i.e.} compression loading, compression unloading, tension loading, tension unloading. A different soil from the previous test is employed, being the parameters shown in Table~\ref{tab3}, column 4.1-2. The obtained stress path  is plotted in Fig.~\ref{fig_c_undrained2}.B, which is equivalent to the obtained by Pastor~\textit{et al.}~\cite{PastorZC:90}.  This path is obtained independently to the loading rate. However, the stress-deformation curve is dependent on the loading rate, as it is observed in Fig.~\ref{fig_c_undrained2}.A. In dashed line it is plotted the curve obtained by increasing the angular frequency. \textcolor{red}{The reason can be that the excess pore water pressure generated,  when the phenomena is quick, cannot be stabilized and provoke a liquefaction of the material that enlarges the strain.}
 
 %%%%%%
 \begin{figure}
@@ -600,7 +600,7 @@ H_{d}=\exp \left(-\gamma_{d} \; \varepsilon_{v}^{\mathrm{p}} \right)
 \end{equation}
 where $\varepsilon_{v}^{\mathrm{p}}$ is the cumulative volumetric plastic strain and $\gamma_{d}$ is a material parameter, which is employed in this research as 400. The higher is this parameter, the quicker the densification is obtained. This technique was proposed by Zienkiewicz and coworkers~\cite{Zienkiewicz99}.
 
-The test consist of varying the deviatoric load between 300 kPa and 150 kPa, what gives us a variation of $\eta=p/q$, of around 0.2 and -0.2. The employed parameters are given in TABLE XXX. In Fig.~\ref{fig_c_drained} the results with and without the employement of the densification parameter, which is equivalent to employ $\gamma_{d}=0$, are depicted. The goal is the reproduction of the typical behavior shown in drained sands, already presented by Bahda~\cite{bahda1997} and Zienkiewicz and coworkers~\cite{Zienkiewicz99}. 
+The test consist of varying the deviatoric load between 300 kPa and 150 kPa, what gives us a variation of $\eta=p/q$, of around 0.2 and -0.2. The employed parameters are given in Table~\ref{tab3}, last column. In Fig.~\ref{fig_c_drained} the results with and without the employment of the densification parameter, which is equivalent to employ $\gamma_{d}=0$, are depicted. The goal is the reproduction of the typical behavior shown in drained sands, already presented by Bahda~\cite{bahda1997} and Zienkiewicz and coworkers~\cite{Zienkiewicz99}. 
 
 %%%%%%
 \begin{figure}

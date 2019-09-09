@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.26)  6 SEP 2019 15:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.26)  9 SEP 2019 14:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -581,73 +581,90 @@ File: Figs/conso.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figs/conso.pdf  used on input line 502.
 (pdftex.def)             Requested size: 370.49881pt x 153.37755pt.
  [13] [14 <./Figs/undrained.pdf> <./Figs/conso.pdf>]
-<Figs/pq_drained.pdf, id=356, 715.00824pt x 447.74176pt>
+<Figs/pq_drained.pdf, id=360, 715.00824pt x 447.74176pt>
 File: Figs/pq_drained.pdf Graphic file (type pdf)
 <use Figs/pq_drained.pdf>
-Package pdftex.def Info: Figs/pq_drained.pdf  used on input line 522.
+Package pdftex.def Info: Figs/pq_drained.pdf  used on input line 523.
 (pdftex.def)             Requested size: 292.5pt x 183.16539pt.
-<Figs/drained_abc.pdf, id=357, 1143.2411pt x 474.48666pt>
+ [15 <./Figs/pq_drained.pdf>]
+<Figs/drained_abc.pdf, id=386, 1143.2411pt x 474.48666pt>
 File: Figs/drained_abc.pdf Graphic file (type pdf)
 <use Figs/drained_abc.pdf>
-Package pdftex.def Info: Figs/drained_abc.pdf  used on input line 531.
+Package pdftex.def Info: Figs/drained_abc.pdf  used on input line 534.
 (pdftex.def)             Requested size: 393.89786pt x 163.48087pt.
 
-Overfull \hbox (3.89786pt too wide) in paragraph at lines 531--532
+Overfull \hbox (3.89786pt too wide) in paragraph at lines 534--535
  [][] 
  []
 
-[15 <./Figs/pq_drained.pdf>]
-Overfull \hbox (6.81949pt too wide) in paragraph at lines 546--547
+<Figs/excess_porepressure.pdf, id=388, 722.93887pt x 571.39473pt>
+File: Figs/excess_porepressure.pdf Graphic file (type pdf)
+<use Figs/excess_porepressure.pdf>
+Package pdftex.def Info: Figs/excess_porepressure.pdf  used on input line 545.
+(pdftex.def)             Requested size: 292.5pt x 231.1869pt.
+[16 <./Figs/drained_abc.pdf>]
+Overfull \hbox (6.81949pt too wide) in paragraph at lines 560--561
 []\OT1/cmr/m/n/12 The first only lies on the com-pres-sion range, study-ing the
  loading-unloading
  []
 
-<Figs/ciclo_undrained_1.pdf, id=384, 486.92816pt x 205.1635pt>
+<Figs/ciclo_undrained_1.pdf, id=421, 486.92816pt x 205.1635pt>
 File: Figs/ciclo_undrained_1.pdf Graphic file (type pdf)
 <use Figs/ciclo_undrained_1.pdf>
-Package pdftex.def Info: Figs/ciclo_undrained_1.pdf  used on input line 551.
-(pdftex.def)             Requested size: 370.49881pt x 156.11057pt.
-[16 <./Figs/drained_abc.pdf> <./Figs/ciclo_undrained_1.pdf>]
-<Figs/ciclo_undrained_2.pdf, id=436, 487.0707pt x 204.49197pt>
+Package pdftex.def Info: Figs/ciclo_undrained_1.pdf  used on input line 565.
+(pdftex.def)             Requested size: 409.50119pt x 172.54588pt.
+
+Overfull \hbox (19.50119pt too wide) in paragraph at lines 565--566
+ [][] 
+ []
+
+<Figs/ciclo_undrained_pw.pdf, id=423, 241.08269pt x 154.71703pt>
+File: Figs/ciclo_undrained_pw.pdf Graphic file (type pdf)
+<use Figs/ciclo_undrained_pw.pdf>
+Package pdftex.def Info: Figs/ciclo_undrained_pw.pdf  used on input line 576.
+(pdftex.def)             Requested size: 253.49762pt x 162.68666pt.
+[17 <./Figs/excess_porepressure.pdf>] [18 <./Figs/ciclo_undrained_1.pdf> <./Fig
+s/ciclo_undrained_pw.pdf>]
+<Figs/ciclo_undrained_2.pdf, id=495, 487.0707pt x 204.49197pt>
 File: Figs/ciclo_undrained_2.pdf Graphic file (type pdf)
 <use Figs/ciclo_undrained_2.pdf>
-Package pdftex.def Info: Figs/ciclo_undrained_2.pdf  used on input line 562.
+Package pdftex.def Info: Figs/ciclo_undrained_2.pdf  used on input line 588.
 (pdftex.def)             Requested size: 382.19833pt x 160.46414pt.
-<Figs/ciclo_drained.pdf, id=442, 847.84859pt x 508.47966pt>
+<Figs/ciclo_drained.pdf, id=501, 847.84859pt x 508.47966pt>
 File: Figs/ciclo_drained.pdf Graphic file (type pdf)
 <use Figs/ciclo_drained.pdf>
-Package pdftex.def Info: Figs/ciclo_drained.pdf  used on input line 582.
+Package pdftex.def Info: Figs/ciclo_drained.pdf  used on input line 608.
 (pdftex.def)             Requested size: 370.49881pt x 222.1955pt.
- [17 <./Figs/ciclo_undrained_2.pdf>] [18 <./Figs/ciclo_drained.pdf>] [19]
+ [19 <./Figs/ciclo_undrained_2.pdf>] [20 <./Figs/ciclo_drained.pdf>] [21]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 612.
+(hyperref)                removing `math shift' on input line 638.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 612.
+(hyperref)                removing `math shift' on input line 638.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 634.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 660.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 634.
- [20
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 660.
+ [22
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 678--679
+Underfull \hbox (badness 10000) in paragraph at lines 704--705
 
  []
 
-(./2019_cyclic_COGE.bbl [21]
+(./2019_cyclic_COGE.bbl [23]
 Underfull \hbox (badness 10000) in paragraph at lines 78--83
 \OT1/cmr/m/n/12 URL []$\OT1/cmtt/m/n/12 http : / / ethos . bl . uk / OrderDetai
 ls . do ? uin = uk . bl . ethos .
  []
 
-[22]
+[24]
 Underfull \hbox (badness 1466) in paragraph at lines 88--96
 []\OT1/cmr/m/n/12 P. Navas, L. Sanavia, S. L^^Sopez-Querol, R. C. Yu, []u-w for
 -mu-
@@ -666,25 +683,21 @@ mtt/m/n/12 doi : 10 . 1007 /
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 685.
- [23]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 685.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 711.
+ [25]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 711.
  (./2019_cyclic_COGE.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 685.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 685.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 711.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 711.
 Package rerunfilecheck Info: File `2019_cyclic_COGE.out' has not changed.
 (rerunfilecheck)             Checksum: 05FEF4139874E561C670D7479939A006;1265.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 685.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 711.
  ) 
 Here is how much of TeX's memory you used:
- 8870 strings out of 492649
- 130245 string characters out of 6129622
- 236732 words of memory out of 5000000
- 12503 multiletter control sequences out of 15000+600000
+ 8887 strings out of 492649
+ 130683 string characters out of 6129622
+ 237112 words of memory out of 5000000
+ 12514 multiletter control sequences out of 15000+600000
  15141 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,13n,46p,1285b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -713,10 +726,10 @@ ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive
 8/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2018/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on 2019_cyclic_COGE.pdf (23 pages, 1803342 bytes).
+Output written on 2019_cyclic_COGE.pdf (25 pages, 2156152 bytes).
 PDF statistics:
- 682 PDF objects out of 1000 (max. 8388607)
- 557 compressed objects within 6 object streams
- 122 named destinations out of 1000 (max. 500000)
- 177 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 741 PDF objects out of 1000 (max. 8388607)
+ 599 compressed objects within 6 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 187 words of extra memory for PDF output out of 10000 (max. 10000000)
 

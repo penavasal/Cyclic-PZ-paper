@@ -509,12 +509,13 @@ Experimentally, it is demonstrated that the maximum strain rate to obtain draine
 
 \begin{equation}
 v_{load}=\frac{\varepsilon_f H}{12.7 \, t_{100}}
-\end{equation}
+\end{equation}\label{eq_drained}
 
 where $\varepsilon_f H$ is a measurement of the shortening of the specimen and $t_{100}$ is the consolidation time. Since 100\% is not possible to be reached, a 95 \% of the dissipation of the pore pressure has been considered, which in Fig.~\ref{fig_conso} is observed to be around 0.48 s. Since the shortening is 0.08 mm, the velocity in which the whole specimen is able to dissipate all the excess pore water pressure has to be slower than 0.013 mm/s.
 
 \subsection{Monotonic triaxial test: drained conditions}
 \label{sec:33}
+The last monotonic test goes deeper in the drained conditions. Once the velocity to get drained conditions is calculated, a drained triaxial test with the same soil parameters of the previous section is simulated. The boundary $\Gamma_4$ of Fig.~\ref{fig_Geo} in this case allows the water outlet. Thus, the point to study if the drainage is reached if a loading rate of 0.013 mm/s is employed will be the one farther than the boundary $\Gamma_4$, \textit{i.e.} point C of Fig.~\ref{fig_Geo}.  The obtained stress path in that point is depicted in Fig.~\ref{fig_pq_drained}. We can see that, in this point, an slope 3:1, typical of drained triaxial tests, is obtained for that velocity, corroborating the hypothesis of equation~\eqref{eq_drained}.
 
 %%%%%%
 \begin{figure}
@@ -525,12 +526,25 @@ where $\varepsilon_f H$ is a measurement of the shortening of the specimen and $
 \end{figure}
 %%%%%%
 
+Some faster loading velocities are studied also. The stress paths for that loading rates cover a range between the slope 3:1 and the stress path of 10 mm/s. We have seen the stress path is related to the relative density, which is function of the relationship $M_f/M_g$. This ratio, for the studied soil, is 0.49, which is similar to ratio of soil C of section~\ref{sec:31}. Thus, the stress path for undrained conditions is similar, what makes us think that, for 10 mm/s (or faster) in the middle of the specimen undrained conditions are obtained. For different locations, different paths are obtained. In Fig.~\ref{fig_drained_abc}, the stress paths of locations A, B and C are plotted. The closer is the boundary  $\Gamma_4$, the more drained is the behavior and the the stress path tends to seek the slope 3:1. However, there is not total drainage in point A. The reason is the excess of pore water pressure generated when the loading velocity is high. In Fig.~\ref{fig_drained_abc} the distribution of pore pressure along the specimen when the 1.5 \% of the strain is reached is depicted also.
+
 %%%%%%
 \begin{figure}
 \centering
 \includegraphics[width=1.01\textwidth]{Figs/drained_abc.pdf}
 \caption{a) Stress path of the monotonic triaxial tests under drained conditions for a loading rate of 10 mm/s at three different locations, b) Pore pressure distribution at 1.5 \% of axial strain and location of different control locations.}
 \label{fig_drained_abc}
+\end{figure}
+%%%%%%
+
+Finally, the pore pressure generated depending on the loading rate is assessed. In Fig.~\ref{fig_pw} the pore pressure at point C when 1.5 \% of the strain is reached for different loading rates is plotted. Obviously, the dissipation is low when the loading rate increases.
+
+%%%%%%
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{Figs/excess_porepressure.pdf}
+\caption{Pore pressure at point C when 1.5 \% of the strain is reached for different loading rates.}
+\label{fig_pw}
 \end{figure}
 %%%%%%
 
@@ -548,11 +562,23 @@ The first only lies on the compression range, studying the loading-unloading cyc
 %%%%%%
 \begin{figure}
 \centering
-\includegraphics[width=0.95\textwidth]{Figs/ciclo_undrained_1.pdf}
+\includegraphics[width=1.05\textwidth]{Figs/ciclo_undrained_1.pdf}
 \caption{Results of the cyclic triaxial tests under undrained conditions: compression.}
 \label{fig_c_undrained1}
 \end{figure}
 %%%%%%
+
+The problem shows that, after several cycles, the soil loses the initial stiffness due to the liquefaction induced by the cyclic loading. Thus, the strain increases dramatically and there is a reduction of the solid pressure. If we study the pore water pressure, depicted in Fig.~\ref{fig_c_undrainedpw}, we can observe an important increasing at the same time that the stiffness decrease, confirming the liquefaction process.
+
+%%%%%%
+\begin{figure}
+\centering
+\includegraphics[width=0.65\textwidth]{Figs/ciclo_undrained_pw.pdf}
+\caption{Pore water pressure results of the cyclic triaxial tests under undrained conditions: compression.}
+\label{fig_c_undrainedpw}
+\end{figure}
+%%%%%%
+
 
 On the other hand, in the second test the whole cycle is assessed, \textit{i.e.} compression loading, compression unloading, tension loading, tension unloading. A different soil from the previous test is employed, being the parameters shown in Table~\ref{tab3}, column 4.1-2. The obtained stress path  is plotted in Fig.~\ref{fig_c_undrained2}.B, which is equivalent to the obtained by Pastor~\textit{et al.}~\cite{PastorZC:90}.  This path is obtained independently to the loading rate. However, the stress-deformation curve is dependent on the loading rate, as it is observed in Fig.~\ref{fig_c_undrained2}.A. In dashed line it is plotted the curve obtained by increasing the angular frequency. \textcolor{red}{The reason can be that the excess pore water pressure generated,  when the phonemana is quick, cannot be stabilized and provoke a liquefaction of the material that enlarges the strain.}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.26)  9 SEP 2019 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.2.26)  9 SEP 2019 14:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -68,7 +68,6 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \@sep=\skip43
 \@@sep=\skip44
 
-(./2019_cyclic_COGE.spl)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip45
@@ -630,7 +629,7 @@ File: Figs/ciclo_undrained_2.pdf Graphic file (type pdf)
 <use Figs/ciclo_undrained_2.pdf>
 Package pdftex.def Info: Figs/ciclo_undrained_2.pdf  used on input line 588.
 (pdftex.def)             Requested size: 382.19833pt x 160.46414pt.
-<Figs/ciclo_drained.pdf, id=501, 847.84859pt x 508.47966pt>
+<Figs/ciclo_drained.pdf, id=502, 847.84859pt x 508.47966pt>
 File: Figs/ciclo_drained.pdf Graphic file (type pdf)
 <use Figs/ciclo_drained.pdf>
 Package pdftex.def Info: Figs/ciclo_drained.pdf  used on input line 608.
@@ -694,9 +693,9 @@ Package rerunfilecheck Info: File `2019_cyclic_COGE.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 711.
  ) 
 Here is how much of TeX's memory you used:
- 8887 strings out of 492649
- 130683 string characters out of 6129622
- 237112 words of memory out of 5000000
+ 8885 strings out of 492649
+ 130641 string characters out of 6129622
+ 237091 words of memory out of 5000000
  12514 multiletter control sequences out of 15000+600000
  15141 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -726,10 +725,10 @@ ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive
 8/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2018/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on 2019_cyclic_COGE.pdf (25 pages, 2156152 bytes).
+Output written on 2019_cyclic_COGE.pdf (25 pages, 2156159 bytes).
 PDF statistics:
- 741 PDF objects out of 1000 (max. 8388607)
- 599 compressed objects within 6 object streams
+ 742 PDF objects out of 1000 (max. 8388607)
+ 600 compressed objects within 6 object streams
  126 named destinations out of 1000 (max. 500000)
  187 words of extra memory for PDF output out of 10000 (max. 10000000)
 

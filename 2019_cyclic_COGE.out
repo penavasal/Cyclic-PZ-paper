@@ -1,17 +1,17 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Methodology}{}% 2
+\BOOKMARK [1][-]{section.2}{Governing equations, weak form and discretization procedures}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{The u-w formulation}{section.2}% 3
-\BOOKMARK [3][-]{subsubsection.2.1.1}{The weak form of system equations for the u-w formulation}{subsection.2.1}% 4
-\BOOKMARK [2][-]{subsection.2.2}{Implicit time integration scheme: Newton-Raphson algorithm}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.3}{Spatial discretization}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.4}{ Hyperelasto-plastic material model: the Generalized Plasticity }{section.2}% 7
-\BOOKMARK [1][-]{section.3}{Model calibration}{}% 8
-\BOOKMARK [2][-]{subsection.3.1}{Monotonic triaxial test: undrained conditions}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.2}{Monotonic consolidation test}{section.3}% 10
-\BOOKMARK [2][-]{subsection.3.3}{Monotonic triaxial test: drained conditions}{section.3}% 11
-\BOOKMARK [1][-]{section.4}{Cyclic triaxial test}{}% 12
-\BOOKMARK [2][-]{subsection.4.1}{Undrained conditions}{section.4}% 13
-\BOOKMARK [2][-]{subsection.4.2}{Drained conditions}{section.4}% 14
-\BOOKMARK [1][-]{section.5}{Conclusions}{}% 15
+\BOOKMARK [2][-]{subsection.2.2}{Weak form for the u-w formulation}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Implicit time integration scheme: Newton-Raphson algorithm}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{A note on spatial discretization}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{A Generalized Plasticity model for sands in a finite strain setting }{}% 7
+\BOOKMARK [1][-]{section.4}{Numerical Application: triaxial soil testing}{}% 8
+\BOOKMARK [2][-]{subsection.4.1}{Monotonic consolidated triaxial compression test: undrained boundary conditions}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Consolidation test}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.3}{Monotonic consolidated triaxial compression test: drained boundary conditions}{section.4}% 11
+\BOOKMARK [1][-]{section.5}{Numerical Application: Cyclic behavior}{}% 12
+\BOOKMARK [2][-]{subsection.5.1}{Undrained conditions}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.2}{Drained conditions}{section.5}% 14
+\BOOKMARK [1][-]{section.6}{Conclusions}{}% 15
 \BOOKMARK [1][-]{appendix.A}{Initial conditions in the u-w formulation}{}% 16
 \BOOKMARK [1][-]{appendix.B}{Consistent Linearization}{}% 17

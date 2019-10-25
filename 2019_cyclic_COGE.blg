@@ -1,52 +1,55 @@
-This is BibTeX, Version 0.99d (TeX Live 2018)
+This is BibTeX, Version 0.99d (TeX Live 2019)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: 2019_cyclic_COGE.aux
 The style file: elsarticle-num.bst
 Database file #1: bib2019.bib
 Warning--I'm ignoring bahda1997's extra "note" field
---line 8 of file bib2019.bib
+--line 141 of file bib2019.bib
 Warning--empty journal in Mira2009
 Warning--empty school in Kontoe2006
+Warning--empty publisher in Bonet2008
+Warning--empty journal in Borja1998
+Warning--empty school in Castro69
 Warning--empty school in bahda1997
-You've used 20 entries,
+You've used 38 entries,
             2937 wiz_defined-function locations,
-            816 strings with 9453 characters,
-and the built_in function-call counts, 6425 in all, are:
-= -- 665
-> -- 179
+            937 strings with 13407 characters,
+and the built_in function-call counts, 11548 in all, are:
+= -- 1126
+> -- 419
 < -- 0
-+ -- 73
-- -- 53
-* -- 531
-:= -- 880
-add.period$ -- 32
-call.type$ -- 20
-change.case$ -- 18
++ -- 165
+- -- 127
+* -- 927
+:= -- 1622
+add.period$ -- 56
+call.type$ -- 38
+change.case$ -- 36
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 162
-empty$ -- 694
-format.name$ -- 68
-if$ -- 1613
+cite$ -- 44
+duplicate$ -- 298
+empty$ -- 1212
+format.name$ -- 159
+if$ -- 2904
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 20
-newline$ -- 83
-num.names$ -- 20
-pop$ -- 110
+int.to.str$ -- 38
+missing$ -- 38
+newline$ -- 144
+num.names$ -- 38
+pop$ -- 211
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 363
+skip$ -- 683
 stack$ -- 0
-substring$ -- 477
-swap$ -- 50
+substring$ -- 710
+swap$ -- 77
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 50
-width$ -- 22
-write$ -- 195
-(There were 4 warnings)
+warning$ -- 6
+while$ -- 82
+width$ -- 40
+write$ -- 347
+(There were 7 warnings)

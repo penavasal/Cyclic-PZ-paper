@@ -5,54 +5,120 @@
 \expandafter\ifx\csname href\endcsname\relax
   \def\href#1#2{#2} \def\path#1{#1}\fi
 
+\bibitem{Mroz_Zk84}
+Z.~Mroz, O.~Zienkiewicz, Uniform formulation of constitutive equation for clays
+  and sands, Mechanics of Engineering Materials, C.S. Desai and R.H. Gallagher
+  (eds.) (1984) 415--449.
+
 \bibitem{PastorZC:90}
 M.~T. Pastor, O.~C. Zienkiewicz, A.~H.~C. Chan, {Generalized plasticity and the
   modelling of soil behaviour}, Int. J. Numer. Anal. Methods Geomech. 14 (1990)
   151--190.
-\newblock \href {http://dx.doi.org/10.1016/j.ocecoaman.2012.02.008}
-  {\path{doi:10.1016/j.ocecoaman.2012.02.008}}.
+
+\bibitem{Pastor92}
+M.~Pastor, O.~Zienkiewicz, X.~Guang-Duo, J.~Peraire, Modelling of sand
+  behaviour: Cyclic loading, anisotropy and localization, Modern Approaches to
+  Plasticity, Kolymbas \& Gudehus (eds.), Springer - Verlag.
+
+\bibitem{FernandezMerodo2004}
+J.~A. {Fernandez Merodo}, M.~Pastor, P.~Mira, L.~Tonni, M.~I. Herreros,
+  E.~Gonzalez, R.~Tamagnini, {Modelling of diffuse failure mechanisms of
+  catastrophic landslides}, Computer Methods in Applied Mechanics and
+  Engineering 193~(27-29) (2004) 2911--2939.
+
+\bibitem{Bolzon96}
+G.~Bolzon, B.~Schrefler, O.~Zienkiewicz, Elasto-plastic constitutive laws
+  generalised to partially saturated states, Géotechnique 46~(2) (1996)
+  279--289.
+
+\bibitem{Tamagnini04}
+R.~Tamagnini, M.~Pastor, A thermodinamically based model for unsaturated soils:
+  a new framework for generalized plasticity, 2nd International Workshop on
+  Unsaturated Soils, Mancuso (ed.), Naples, Italy, (2004) 1--14.
 
 \bibitem{Mira2009}
 P.~Mira, L.~Tonni, M.~T. Pastor, J.~A. Fern, {A generalized midpoint algorithm
   for the integration of a generalized plasticity model for sands} 77 (2009)
   1201--1223.
-\newblock \href {http://dx.doi.org/10.1002/nme} {\path{doi:10.1002/nme}}.
 
 \bibitem{Manzanal2011}
 D.~G. Manzanal, J.~A. {Fern{\'{a}}ndez Merodo}, M.~T. Pastor, {Generalized
   plasticity state parameter-based model for saturated and unsaturated soils.
   Part 1: Saturated state}, Int. J. Numer. Anal. Methods Geomech. 35 (2011)
   1347--1362.
-\newblock \href {http://arxiv.org/abs/nag.2347} {\path{arXiv:nag.2347}}, \href
-  {http://dx.doi.org/10.1002/nag} {\path{doi:10.1002/nag}}.
 
 \bibitem{Manzanal2011a}
 D.~G. Manzanal, M.~T. Pastor, J.~A. {Fern{\'{a}}ndez Merodo}, {Generalized
   plasticity state parameter-based model for saturated and unsaturated soils.
   Part II: Unsaturated soil modeling}, Int. J. Numer. Anal. Methods Geomech. 35
   (2011) 1899--1917.
-\newblock \href {http://arxiv.org/abs/nag.2347} {\path{arXiv:nag.2347}}, \href
-  {http://dx.doi.org/10.1002/nag} {\path{doi:10.1002/nag}}.
+
+\bibitem{Javanmardi2018}
+Y.~Javanmardi, S.~M.~R. Imam, M.~Pastor, D.~Manzanal,
+  \href{https://doi.org/10.1680/jgeot.16.P.136}{A reference state curve to
+  define the state of soils over a wide range of pressures and densities},
+  Géotechnique 68~(2) (2018) 95--106.
+  
+  
+\bibitem{Manzanal2015}
+D.~Manzanal, M.~Pastor, Y.~Javanmardi, J.A.~Fernández Merodo,  P.~Mira, M.~Martín Stickle, A.~Yagüe, {A reference state curve to define the state of soils over a wide range of pressures and densities}, Coupled and Multiphysics phenomena: ALERT Doctoral School 2015: Editors: B. Schrefler, L. Sanavia, F. Collin (2015).
+
+\bibitem{Manzanal2019}
+D.~Manzanal, M.~Coop, B.~Baudet, M.~Pastor, Modelling crushable material.,
+  Geoscience frontier Under review.
+
+\bibitem{Mira18}
+P.~Mira, J.~Fernández-Merodo, M.~Pastor, D.~Manzanal, M.~Stickle, A.~Yagüe,
+  I.~Rodríguez, J.~López, A.~Tomás, G.~Barajas, J.~López-Lara, A
+  methodology for the 3d analysis of foundations for marine structures,
+  Numerical Methods in Geotechnical Engineering IX.
+
+\bibitem{Pastor09}
+M.~Pastor, D.~Manzanal, J.~Fernandez~Merodo, P.~Mira, B.~T., V.~Drempetic,
+  M.~Pastor, B.~Elizalde, B.~Haddad, M.~Sánchez, From solid to fluidized
+  soils: Diffuse failure mechanisms in geostructures with applications to fast
+  catastrophic landslides., Granular Matter 12~(3) (2018) 211--328.
+
+\bibitem{Pastor11}
+M.~Pastor, A.~Chan, D.~Manzanal, J.~Fernandez~Merodo, B.~T., Computational
+  geomechanics: the heritage of olek zienkiewicz., International Journal for
+  Numerical Methods 87 (2011) 457--489.
+
+\bibitem{Manzanal2019b}
+D.~Manzanal, S.~Bertelli, S.~L\'opez-Querol, T.~Rosetto, P.~Mira, Influence of
+  fines content on liquefaction from a critical state framework: the
+  christchurch earthquake case study, International Journal of Soil Dynamics
+  and Earthquake Engineering Under review.
+
+\bibitem{Seed75}
+H.~Seed, F.~Makdisi, K.~Lee, I.~Idriss, Dynamic analysis of the slide in the
+  lower san fernando dam during the earthquake of february 9, 1971, Journal of
+  Geotechnical Engineering, ASCE 101 (1975) 889--911.
+
+\bibitem{Olson02}
+S.~Olson, T.~Stark, Liquefied strength ratio from liquefaction flow failure
+  case histories., Canadian Geotechnical Journal 39 (2002) 629--647.
+
+\bibitem{zienkiewicz1984}
+O.~C. Zienkiewicz, T.~Shiomi, {Dynamic Behaviour of saturated porous media: The
+  generalized Biot formulation and its numerical solution.}, Int. J. Numer.
+  Anal. Methods Geomech. 8~(1) (1984) 71--96.
 
 \bibitem{zienkiewicz1980}
 O.~C. Zienkiewicz, C.~T. Chang, P.~Bettes, {Drained, undrained, consolidating
   and dynamic behaviour assumptions in soils}, G{\'{e}}otechnique 30~(4) (1980)
   385--395.
-\newblock \href {http://dx.doi.org/10.1016/j.ocecoaman.2012.02.008}
-  {\path{doi:10.1016/j.ocecoaman.2012.02.008}}.
 
 \bibitem{Navas2016b}
 P.~Navas, R.~C. Yu, S.~L{\'{o}}pez-Querol, B.~Li, {Dynamic consolidation
   problems in saturated soils solved through u-w formulation in a {\{}LME{\}}
   meshfree framework}, Comput. Geotech. 79 (2016) 55--72.
-\newblock \href {http://dx.doi.org/10.1016/j.compgeo.2016.05.021}
-  {\path{doi:10.1016/j.compgeo.2016.05.021}}.
 
-\bibitem{LopezQuerol2006}
-S.~L{\'{o}}pez-Querol, {Modelizaci{\'{o}}n geomec{\'{a}}nica de los procesos de
-  densificaci{\'{o}}n, licuefacci{\'{o}}n y movilidad c{\'{i}}clica de suelos
-  granulares sometidos a solicitaciones din{\'{a}}micas}, Ph.D. thesis,
-  University of Castilla-La Mancha, Ciudad Real, Spain (2006).
+\bibitem{Navas2016}
+P.~Navas, S.~L{\'{o}}pez-Querol, R.~C. Yu, B.~Li, {B-bar based algorithm
+  applied to meshfree numerical schemes to solve unconfined seepage problems
+  through porous media}, Int. J. Numer. Anal. Methods Geomech. 40~(6) (2016)
+  962--984.
 
 \bibitem{LewisSchrefler98}
 R.~W. Lewis, B.~A. Schrefler, {The finite element method in the static and
@@ -63,8 +129,6 @@ R.~W. Lewis, B.~A. Schrefler, {The finite element method in the static and
 S.~L{\'{o}}pez-Querol, J.~A. {Fern{\'{a}}ndez Merodo}, P.~Mira, M.~T. Pastor,
   {Numerical modelling of dynamic consolidation on granular soils}, Int. J.
   Numer. Anal. Methods Geomech. 32 (2008) 1431--1457.
-\newblock \href {http://arxiv.org/abs/nag.2347} {\path{arXiv:nag.2347}}, \href
-  {http://dx.doi.org/10.1002/nag} {\path{doi:10.1002/nag}}.
 
 \bibitem{Zienkiewicz99}
 O.~C. Zienkiewicz, A.~H.~C. Chan, M.~T. Pastor, B.~A. Schrefler, T.~Shiomi,
@@ -79,60 +143,59 @@ S.~Kontoe,
   \href{http://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.435799}{{Developement
   of time integration schemes and advanced boundary conditions for dynamic
   geotechnical analysis}}, Ph.D. thesis (2006).
-\newline\urlprefix\url{http://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.435799}
 
 \bibitem{wriggers:08}
 P.~Wriggers, {Nonlinear Finite Element Methods}, Springer, 2008.
 
 \bibitem{Navas:17c}
 P.~Navas, L.~Sanavia, S.~L{\'{o}}pez-Querol, R.~C. Yu,
-  \href{https://doi.org/10.1007/s00466-017-1524-y}{u-w formulation for dynamic
+{u-w formulation for dynamic
   problems in large deformation regime solved through an implicit meshfree
-  scheme.}, Comput. Mech. Published~(4) (2017)
-  https://doi.org/10.1007/s00466--017--1524--y.
-\newblock \href {http://dx.doi.org/10.1007/s00466-017-1524-y}
-  {\path{doi:10.1007/s00466-017-1524-y}}.
-\newline\urlprefix\url{https://doi.org/10.1007/s00466-017-1524-y}
+  scheme.}, Comput. Mech. (2018)
 
 \bibitem{arroyo2006}
 M.~Arroyo, M.~Ortiz, {Local maximum-entropy approximation schemes: a seamless
   bridge between finite elements and meshfree methods}, Int. J. Numer. Methods
   Eng. 65~(13) (2006) 2167--2202.
-\newblock \href {http://dx.doi.org/10.1002/nme.1534}
-  {\path{doi:10.1002/nme.1534}}.
 
 \bibitem{Navas2018}
 P.~Navas, S.~L{\'{o}}pez-Querol, R.~C. Yu, M.~T. Pastor, {Optimal
   transportation meshfree method in geotechnical engineering problems under
   large deformation regime}, Int. J. Numer. Methods Eng. 115~(10) (2018)
   1217--1240.
-\newblock \href {http://dx.doi.org/10.1002/nme.5841}
-  {\path{doi:10.1002/nme.5841}}.
+
+\bibitem{Bonet2008}
+J.~Bonet, R.~D. Wood, {Nonlinear continuum mechanics for Finite Element
+  Analysis}, 2008.
 
 \bibitem{cuitino:92}
 A.~Cuiti{\~{n}}o, M.~Ortiz, {A material-independent method for extending stress
   update algotithms from small-strain plasticity to finite plasticity with
   multiplicative kinematics}, Eng. Comput. 9 (1992) 437--451.
 
+\bibitem{Borja1998}
+R.~I. Borja, E.~Alarc{\'{o}}n, {Consolidaci{\'{o}}n elastopl{\'{a}}stica con
+  deformaciones finitas . Implementaci{\'{o}}n con elementos finitos y ejemplos
+  num{\'{e}}ricos}.
+
 \bibitem{Houlsby2005}
 G.~T. Houlsby, A.~Amorosi, E.~Rojas, {Elastic moduli of soils dependent on
   pressure: a hyperelastic formulation}, G{\'{e}}otechnique 55~(5) (2005)
   383--392.
-\newblock \href {http://dx.doi.org/10.1680/geot.55.5.383.66021}
-  {\path{doi:10.1680/geot.55.5.383.66021}}.
 
 \bibitem{Santagiuliana2006}
 R.~Santagiuliana, B.~A. Schrefler, {Enhancing the Bolzon-Schrefler-Zienkiewicz
   constitutive model for partially saturated soil}, Transp. Porous Media 65~(1)
   (2006) 1--30.
-\newblock \href {http://dx.doi.org/10.1007/s11242-005-6083-6}
-  {\path{doi:10.1007/s11242-005-6083-6}}.
+
+\bibitem{Castro69}
+G.~Castro, Liquefaction of sands., Ph.D. thesis, Harvard University, Cambridge,
+  Massachusetts. (1969).
 
 \bibitem{bahda1997}
 F.~BAHDA, \href{http://www.theses.fr/1997ENPC9730}{Etude du comportaement du
   sable à l'appareil triaxial : expérience et modélisation}, Ph.D. thesis,
   thèse de doctorat dirigée par CANOU, JEAN Sciences appliquées
   Marne-la-vallée, ENPC 1997 (1997).
-\newline\urlprefix\url{http://www.theses.fr/1997ENPC9730}
 
 \end{thebibliography}

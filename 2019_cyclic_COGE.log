@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.30)  25 OCT 2019 16:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.30)  29 OCT 2019 12:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -538,10 +538,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-Package natbib Warning: Citation `LopezQuerol2006' on page 2 undefined on input
- line 90.
-
 [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -552,10 +548,10 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 99.
 
 [3]
-Overfull \hbox (0.66241pt too wide) in paragraph at lines 126--127
-[]\OT1/cmr/m/n/12 In the whole re-search, the em-ploy-ment of $\OML/cmm/m/it/12
- K[] \OT1/cmr/m/n/12 = 1\OML/cmm/m/it/12 e\OT1/cmr/m/n/12 4 $MPa, $\OML/cmm/m/i
-t/12 K[] \OT1/cmr/m/n/12 = 1\OML/cmm/m/it/12 e\OT1/cmr/m/n/12 36 $MPa,
+Overfull \hbox (3.88658pt too wide) in paragraph at lines 126--127
+[]\OT1/cmr/m/n/12 In all the cases con-sid-ered in this pa-per, the em-ploy-men
+t of $\OML/cmm/m/it/12 K[] \OT1/cmr/m/n/12 = 1\OML/cmm/m/it/12 e\OT1/cmr/m/n/12
+ 4 $MPa,
  []
 
 [4]
@@ -578,126 +574,129 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--172
  []
 
 [5]
-Overfull \hbox (6.88477pt too wide) in paragraph at lines 207--209
+Overfull \hbox (6.88477pt too wide) in paragraph at lines 208--210
 \OT1/cmr/m/n/12 These co-ef-fi-cients can be eas-ily ex-tended to any other tim
 e in-te-gra-tion schemes. 
  []
 
-[6] [7] [8] [9] [10] [11] [12] [13]
-<Figs/Geo.pdf, id=317, 499.3054pt x 431.66368pt>
+[6] [7] [8] [9] [10] [11]
+Overfull \hbox (16.13992pt too wide) in paragraph at lines 399--400
+\OT1/cmr/m/n/12 lab-o-ra-tory tests as a func-tion of di-la-tancy, rep-re-sente
+d by $\OML/cmm/m/it/12 d[] \OT1/cmr/m/n/12 = [] []$
+ []
+
+[12]
+<Figs/Geo.pdf, id=312, 499.3054pt x 431.66368pt>
 File: Figs/Geo.pdf Graphic file (type pdf)
 <use Figs/Geo.pdf>
-Package pdftex.def Info: Figs/Geo.pdf  used on input line 441.
+Package pdftex.def Info: Figs/Geo.pdf  used on input line 442.
 (pdftex.def)             Requested size: 331.50238pt x 286.60484pt.
- [14 <./Figs/Geo.pdf>]
-<Figs/undrained.pdf, id=355, 595.23778pt x 248.48634pt>
+ [13] [14 <./Figs/Geo.pdf>]
+<Figs/undrained.pdf, id=357, 595.23778pt x 248.48634pt>
 File: Figs/undrained.pdf Graphic file (type pdf)
 <use Figs/undrained.pdf>
-Package pdftex.def Info: Figs/undrained.pdf  used on input line 485.
+Package pdftex.def Info: Figs/undrained.pdf  used on input line 486.
 (pdftex.def)             Requested size: 386.10214pt x 161.18433pt.
- [15 <./Figs/undrained.pdf>]
-<Figs/conso.pdf, id=387, 962.43164pt x 398.42151pt>
+<Figs/conso.pdf, id=362, 962.43164pt x 398.42151pt>
 File: Figs/conso.pdf Graphic file (type pdf)
 <use Figs/conso.pdf>
-Package pdftex.def Info: Figs/conso.pdf  used on input line 500.
+Package pdftex.def Info: Figs/conso.pdf  used on input line 501.
 (pdftex.def)             Requested size: 370.49881pt x 153.37755pt.
- [16 <./Figs/conso.pdf>]
-<Figs/pq_drained.pdf, id=415, 715.00824pt x 447.74176pt>
+ [15 <./Figs/undrained.pdf>]
+<Figs/pq_drained.pdf, id=396, 715.00824pt x 447.74176pt>
 File: Figs/pq_drained.pdf Graphic file (type pdf)
 <use Figs/pq_drained.pdf>
-Package pdftex.def Info: Figs/pq_drained.pdf  used on input line 521.
+Package pdftex.def Info: Figs/pq_drained.pdf  used on input line 522.
 (pdftex.def)             Requested size: 292.5pt x 183.16539pt.
-<Figs/drained_abc.pdf, id=419, 1143.2411pt x 474.48666pt>
+ [16 <./Figs/conso.pdf>]
+<Figs/drained_abc.pdf, id=422, 1143.2411pt x 474.48666pt>
 File: Figs/drained_abc.pdf Graphic file (type pdf)
 <use Figs/drained_abc.pdf>
-Package pdftex.def Info: Figs/drained_abc.pdf  used on input line 532.
+Package pdftex.def Info: Figs/drained_abc.pdf  used on input line 533.
 (pdftex.def)             Requested size: 393.89786pt x 163.48087pt.
 
-Overfull \hbox (3.89786pt too wide) in paragraph at lines 532--533
+Overfull \hbox (3.89786pt too wide) in paragraph at lines 533--534
  [][] 
  []
 
-[17 <./Figs/pq_drained.pdf>]
-<Figs/excess_porepressure.pdf, id=444, 722.93887pt x 571.39473pt>
+<Figs/excess_porepressure.pdf, id=424, 722.93887pt x 571.39473pt>
 File: Figs/excess_porepressure.pdf Graphic file (type pdf)
 <use Figs/excess_porepressure.pdf>
-Package pdftex.def Info: Figs/excess_porepressure.pdf  used on input line 543.
+Package pdftex.def Info: Figs/excess_porepressure.pdf  used on input line 544.
 (pdftex.def)             Requested size: 292.5pt x 231.1869pt.
 
-Overfull \hbox (6.81949pt too wide) in paragraph at lines 558--559
+Overfull \hbox (6.81949pt too wide) in paragraph at lines 559--560
 []\OT1/cmr/m/n/12 The first only lies on the com-pres-sion range, study-ing the
  loading-unloading
  []
 
-<Figs/ciclo_undrained_1.pdf, id=449, 486.92816pt x 205.1635pt>
+[17 <./Figs/pq_drained.pdf>] [18 <./Figs/drained_abc.pdf> <./Figs/excess_porepr
+essure.pdf>]
+<Figs/ciclo_undrained_1.pdf, id=495, 486.92816pt x 205.1635pt>
 File: Figs/ciclo_undrained_1.pdf Graphic file (type pdf)
 <use Figs/ciclo_undrained_1.pdf>
-Package pdftex.def Info: Figs/ciclo_undrained_1.pdf  used on input line 563.
+Package pdftex.def Info: Figs/ciclo_undrained_1.pdf  used on input line 564.
 (pdftex.def)             Requested size: 409.50119pt x 172.54588pt.
 
-Overfull \hbox (19.50119pt too wide) in paragraph at lines 563--564
+Overfull \hbox (19.50119pt too wide) in paragraph at lines 564--565
  [][] 
  []
 
-<Figs/ciclo_undrained_pw.pdf, id=451, 241.08269pt x 154.71703pt>
+<Figs/ciclo_undrained_pw.pdf, id=497, 241.08269pt x 154.71703pt>
 File: Figs/ciclo_undrained_pw.pdf Graphic file (type pdf)
 <use Figs/ciclo_undrained_pw.pdf>
-Package pdftex.def Info: Figs/ciclo_undrained_pw.pdf  used on input line 574.
+Package pdftex.def Info: Figs/ciclo_undrained_pw.pdf  used on input line 575.
 (pdftex.def)             Requested size: 253.49762pt x 162.68666pt.
-[18 <./Figs/drained_abc.pdf>] [19 <./Figs/excess_porepressure.pdf> <./Figs/cicl
-o_undrained_1.pdf>]
-<Figs/ciclo_undrained_2.pdf, id=527, 487.0707pt x 204.49197pt>
+[19 <./Figs/ciclo_undrained_1.pdf> <./Figs/ciclo_undrained_pw.pdf>]
+<Figs/ciclo_undrained_2.pdf, id=547, 487.0707pt x 204.49197pt>
 File: Figs/ciclo_undrained_2.pdf Graphic file (type pdf)
 <use Figs/ciclo_undrained_2.pdf>
-Package pdftex.def Info: Figs/ciclo_undrained_2.pdf  used on input line 586.
+Package pdftex.def Info: Figs/ciclo_undrained_2.pdf  used on input line 587.
 (pdftex.def)             Requested size: 382.19833pt x 160.46414pt.
- [20 <./Figs/ciclo_undrained_pw.pdf> <./Figs/ciclo_undrained_2.pdf>]
-<Figs/ciclo_drained.pdf, id=594, 847.84859pt x 508.47966pt>
+ [20 <./Figs/ciclo_undrained_2.pdf>]
+<Figs/ciclo_drained.pdf, id=598, 847.84859pt x 508.47966pt>
 File: Figs/ciclo_drained.pdf Graphic file (type pdf)
 <use Figs/ciclo_drained.pdf>
-Package pdftex.def Info: Figs/ciclo_drained.pdf  used on input line 606.
+Package pdftex.def Info: Figs/ciclo_drained.pdf  used on input line 607.
 (pdftex.def)             Requested size: 370.49881pt x 222.1955pt.
  [21 <./Figs/ciclo_drained.pdf>] [22] [23]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 640.
+(hyperref)                removing `math shift' on input line 641.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 640.
+(hyperref)                removing `math shift' on input line 641.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 662.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 663.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 662.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 663.
  [24
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 706--707
+Underfull \hbox (badness 10000) in paragraph at lines 707--708
 
  []
 
 (./2019_cyclic_COGE.bbl [25] [26] [27] [28])
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 713.
-[29]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 713.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 714.
+ [29]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 714.
  (./2019_cyclic_COGE.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 713.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 713.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 714.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 714.
 Package rerunfilecheck Info: File `2019_cyclic_COGE.out' has not changed.
 (rerunfilecheck)             Checksum: C604206C9CE58B80ED0D4EBEFE9548F1;1383.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 713.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 714.
  ) 
 Here is how much of TeX's memory you used:
  9181 strings out of 492616
  134747 string characters out of 6129481
- 242391 words of memory out of 5000000
+ 246387 words of memory out of 5000000
  12820 multiletter control sequences out of 15000+600000
  15285 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -726,10 +725,10 @@ ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive
 19/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/201
 9/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on 2019_cyclic_COGE.pdf (29 pages, 2186463 bytes).
+Output written on 2019_cyclic_COGE.pdf (29 pages, 2186035 bytes).
 PDF statistics:
- 796 PDF objects out of 1000 (max. 8388607)
- 644 compressed objects within 7 object streams
+ 797 PDF objects out of 1000 (max. 8388607)
+ 645 compressed objects within 7 object streams
  147 named destinations out of 1000 (max. 500000)
  187 words of extra memory for PDF output out of 10000 (max. 10000000)
 

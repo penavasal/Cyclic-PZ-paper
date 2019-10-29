@@ -11,7 +11,7 @@ Z.~Mroz, O.~Zienkiewicz, Uniform formulation of constitutive equation for clays
   (eds.) (1984) 415--449.
 
 \bibitem{PastorZC:90}
-M.~T. Pastor, O.~C. Zienkiewicz, A.~H.~C. Chan, {Generalized plasticity and the
+M. Pastor, O.~C. Zienkiewicz, A.~H.~C. Chan, {Generalized plasticity and the
   modelling of soil behaviour}, Int. J. Numer. Anal. Methods Geomech. 14 (1990)
   151--190.
 
@@ -37,18 +37,18 @@ R.~Tamagnini, M.~Pastor, A thermodinamically based model for unsaturated soils:
   Unsaturated Soils, Mancuso (ed.), Naples, Italy, (2004) 1--14.
 
 \bibitem{Mira2009}
-P.~Mira, L.~Tonni, M.~T. Pastor, J.~A. Fern, {A generalized midpoint algorithm
+P.~Mira, L.~Tonni, M. Pastor, J.~A. Fern, {A generalized midpoint algorithm
   for the integration of a generalized plasticity model for sands} 77 (2009)
   1201--1223.
 
 \bibitem{Manzanal2011}
-D.~G. Manzanal, J.~A. {Fern{\'{a}}ndez Merodo}, M.~T. Pastor, {Generalized
+D.~G. Manzanal, J.~A. {Fern{\'{a}}ndez Merodo}, M. Pastor, {Generalized
   plasticity state parameter-based model for saturated and unsaturated soils.
   Part 1: Saturated state}, Int. J. Numer. Anal. Methods Geomech. 35 (2011)
   1347--1362.
 
 \bibitem{Manzanal2011a}
-D.~G. Manzanal, M.~T. Pastor, J.~A. {Fern{\'{a}}ndez Merodo}, {Generalized
+D.~G. Manzanal, M. Pastor, J.~A. {Fern{\'{a}}ndez Merodo}, {Generalized
   plasticity state parameter-based model for saturated and unsaturated soils.
   Part II: Unsaturated soil modeling}, Int. J. Numer. Anal. Methods Geomech. 35
   (2011) 1899--1917.
@@ -81,8 +81,13 @@ M.~Pastor, D.~Manzanal, J.~Fernandez~Merodo, P.~Mira, B.~T., V.~Drempetic,
 
 \bibitem{Pastor11}
 M.~Pastor, A.~Chan, D.~Manzanal, J.~Fernandez~Merodo, B.~T., Computational
-  geomechanics: the heritage of olek zienkiewicz., International Journal for
+  geomechanics: the heritage of Olek Zienkiewicz., International Journal for
   Numerical Methods 87 (2011) 457--489.
+  
+  \bibitem{LopezQuerol2008}
+S.~L{\'{o}}pez-Querol, J.~A. {Fern{\'{a}}ndez Merodo}, P.~Mira, M. Pastor,
+  {Numerical modelling of dynamic consolidation on granular soils}, Int. J.
+  Numer. Anal. Methods Geomech. 32 (2008) 1431--1457.
 
 \bibitem{Manzanal2019b}
 D.~Manzanal, S.~Bertelli, S.~L\'opez-Querol, T.~Rosetto, P.~Mira, Influence of
@@ -92,7 +97,7 @@ D.~Manzanal, S.~Bertelli, S.~L\'opez-Querol, T.~Rosetto, P.~Mira, Influence of
 
 \bibitem{Seed75}
 H.~Seed, F.~Makdisi, K.~Lee, I.~Idriss, Dynamic analysis of the slide in the
-  lower san fernando dam during the earthquake of february 9, 1971, Journal of
+  lower San Fernando dam during the earthquake of February 9, 1971, Journal of
   Geotechnical Engineering, ASCE 101 (1975) 889--911.
 
 \bibitem{Olson02}
@@ -125,13 +130,8 @@ R.~W. Lewis, B.~A. Schrefler, {The finite element method in the static and
   dynamic deformation and consolidation of porous media.}, John Wiley {\&} Sons
   Ltd., 1998.
 
-\bibitem{LopezQuerol2008}
-S.~L{\'{o}}pez-Querol, J.~A. {Fern{\'{a}}ndez Merodo}, P.~Mira, M.~T. Pastor,
-  {Numerical modelling of dynamic consolidation on granular soils}, Int. J.
-  Numer. Anal. Methods Geomech. 32 (2008) 1431--1457.
-
 \bibitem{Zienkiewicz99}
-O.~C. Zienkiewicz, A.~H.~C. Chan, M.~T. Pastor, B.~A. Schrefler, T.~Shiomi,
+O.~C. Zienkiewicz, A.~H.~C. Chan, M. Pastor, B.~A. Schrefler, T.~Shiomi,
   {Computational Geomechanics}, John Wiley, UK, 1999.
 
 \bibitem{Terzaghi1925}
@@ -159,7 +159,7 @@ M.~Arroyo, M.~Ortiz, {Local maximum-entropy approximation schemes: a seamless
   Eng. 65~(13) (2006) 2167--2202.
 
 \bibitem{Navas2018}
-P.~Navas, S.~L{\'{o}}pez-Querol, R.~C. Yu, M.~T. Pastor, {Optimal
+P.~Navas, S.~L{\'{o}}pez-Querol, R.~C. Yu, M. Pastor, {Optimal
   transportation meshfree method in geotechnical engineering problems under
   large deformation regime}, Int. J. Numer. Methods Eng. 115~(10) (2018)
   1217--1240.

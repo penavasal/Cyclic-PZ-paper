@@ -87,9 +87,9 @@ Generalized Plasticity Theory introduced by Mroz and Zienkiewicz~\cite{Mroz_Zk84
 
 The model has been implemented within  full coupled  $u-p_w$ formulation in the Finite Element Code GeHoMadrid (Fernandez Merodo \textit{et al}~\cite{FernandezMerodo2004}) to study several boundary value problems in small strain as marine foundation (Mira \textit{et al.}~\cite{Mira18}), slope stability (Pastor \textit{et al. }~\cite{Pastor09,Pastor11}) and dynamic problems (L\'opez-Querol \textit{et al.}~\cite{LopezQuerol2008}, Manzanal \textit{et al}~\cite{Manzanal2019b}). 
 
-Catastrophic failure of geostructures involve large masses of soils which fluidize and develop large deformations (Seed \textit{et al}~\cite{Seed75}, Olson and Stark~\cite{Olson02}, Pastor~\textit{ et al.}~\cite{Pastor09}). Most of them involve saturated sands or silty sands subjected to a static loading or cyclic loading such as earthquake-induced loading. It is well known that the stress-strain behavior of granular soils is different depending on initial conditions: relative density and confinement pressure; velocity and type of load: static, cyclic or dynamic; and conditions of drainage: drained, partially drained or undrained. Drainage conditions are conditioned by the relative permeability of soils and their variation during post failure. When permeability tends to be high, the relative movement of the water and solid phase would take relevance such as dynamic problem with a high frequency loading (L\'opez-Querol \textit{et al.}~\cite{LopezQuerol2006}) or diffuse failures of loose granular materials with high mobility (Pastor~\textit{ et al.}~\cite{Pastor09}). 
+Catastrophic failure of geostructures involve large masses of soils which fluidize and develop large deformations (Seed \textit{et al}~\cite{Seed75}, Olson and Stark~\cite{Olson02}, Pastor~\textit{ et al.}~\cite{Pastor09}). Most of them involve saturated sands or silty sands subjected to a static loading or cyclic loading such as earthquake-induced loading. It is well known that the stress-strain behavior of granular soils is different depending on initial conditions: relative density and confinement pressure; velocity and type of load: static, cyclic or dynamic; and conditions of drainage: drained, partially drained or undrained. Drainage conditions are conditioned by the relative permeability of soils and their variation during post failure. When permeability tends to be high, the relative movement of the water and solid phase would take relevance such as dynamic problem with a high frequency loading (L\'opez-Querol \textit{et al.}~\cite{LopezQuerol2008}) or diffuse failures of loose granular materials with high mobility (Pastor~\textit{ et al.}~\cite{Pastor09}). 
 
-Thus, the employment of the traditional $u-p_w$ formulation of the governing equations, even in the dynamic form, is not sufficient  the hydro-mechanical response in saturated soils requiring the complete formulation $u-w$ ~\cite{zienkiewicz1984}. Zienkiewicz ~\textit{et al.} ~\cite{zienkiewicz1980} made an assessment of the suitability of the usage of the complete formulation depending on the frequency of the loading and the permeability. The dynamic consolidation problems studied in that research were analyzed by Navas ~\textit{et al.} ~\cite{Navas2016b} in the elastic range and also by L\'opez-Querol~\textit{et al.} ~\cite{LopezQuerol2008} within the Generalized Plasticity model for small strains. When a soil element is deform up to $3\%$ or more, the small strain approach lacks of non linear behavior related with finite strains.Taking into account that such range of deformations is not unusual in practical geotechnical engineering, the extension of the $u-w$ formulation to a large deformation framework seems to be required.
+Thus, the employment of the traditional $u-p_w$ formulation of the governing equations, even in the dynamic form, is not sufficient  the hydro-mechanical response in saturated soils requiring the complete formulation $u-w$ ~\cite{zienkiewicz1984}. Zienkiewicz ~\textit{et al.} ~\cite{zienkiewicz1980} made an assessment of the suitability of the usage of the complete formulation depending on the frequency of the loading and the permeability. The dynamic consolidation problems studied in that research were analyzed by Navas ~\textit{et al.} ~\cite{Navas2016b} in the elastic range and also by L\'opez-Querol~\textit{et al.} ~\cite{LopezQuerol2008} within the Generalized Plasticity model for small strains. When a soil element is deformed up to $3\%$ or more, the small strain approach lacks of non linear behavior related with finite strains.Taking into account that such range of deformations is not unusual in practical geotechnical engineering, the extension of the $u-w$ formulation to a large deformation framework seems to be required.
 Although this $u-w$ finite strain approach has been considered in previous researches ~\cite{Navas2016}, to the authors' knowledge, no attempt has been devoted to include an elastoplastic behavior from the Generalized Plasticity theory, suitable for modeling sands under both monotonic and dynamic loads. This is the main contribution of the present work. The new model is numerically solved using an Optimal Transportation Meshfree approach that is known to provide excellent results when there are large deformations.
 
 
@@ -123,14 +123,14 @@ Q = \left[ \frac{1-n}{K_s} + \frac{n}{K_w} \right]^{-1}.
 \end{equation}
 
 %%%%%
-In the whole research, the employment of $K_w=1e4\,$MPa, $K_s=1e36\,$MPa, $\rho_s=2600 \, kg/m^3$ and $\rho_s=1000 \, kg/m^3$ has been considered. Equation \eqref{eq_uw10} can be integrated over time to obtain the pore pressure as
+In all the cases considered in this paper, the employment of $K_w=1e4\,$MPa, $K_s=1e36\,$MPa, $\rho_s=2600 \, kg/m^3$ and $\rho_s=1000 \, kg/m^3$ has been considered. Equation \eqref{eq_uw10} can be integrated over time to obtain the pore pressure as
 \begin{equation}\label{eq_uw15}
 p_w=-Q \left[ \mbox{div} (\boldsymbol{u}) + \mbox{div} (\boldsymbol{w}) \right] +p_{w_0},
 \end{equation}
 where $p_{w_0}$ is the initial pore pressure.
 %%%%%
 
-On the other hand, Lewis and Schrefler~\cite{LewisSchrefler98} also give the linear momentum balance equation for the multiphase system under saturated conditions as the summation of the dynamic equations for the individual constituents relative to the solid.
+Lewis and Schrefler~\cite{LewisSchrefler98} also provide the linear momentum balance equation for the multiphase system under saturated conditions as the summation of the dynamic equations for the individual constituents relative to the solid.
 \begin{equation}\label{eq_uw14}
 \mbox{div}\boldsymbol{ \sigma} -\rho\boldsymbol{\ddot{u}} -\rho_w\boldsymbol{\ddot{w}}+\rho\boldsymbol{g}=\boldsymbol{0}.
 \end{equation}
@@ -148,7 +148,7 @@ Finally, the third Biot's equation is derived from the general form of Darcy's l
 \begin{equation}\label{eq_uw12}
 -\mbox{grad }p_w -\frac{\mu_w}{k}\boldsymbol{\dot{w}}+ \rho_w \left (\boldsymbol{g}-\boldsymbol{\ddot{u}}-\frac{\boldsymbol{\ddot{w}}}{n} \right)=\boldsymbol{0}.
 \end{equation}
-where $\dot{\boldsymbol{w}}/n$ represents the relative velocity of the fluid, taking into account that $\dot\Box$ is the material time derivative of $\qed$ with respect to the solid; $\boldsymbol{\ddot{u}}$ denotes the solid phase acceleration, $\ddot{\boldsymbol{w}}/n$ is the relative acceleration of the fluid respect to the solid phase, $\boldsymbol{g}$ represents the external acceleration vector, $\mu_w$ denotes the dynamic viscosity of the water and $\boldsymbol{k}$ is the intrinsic permeability tensor, which becomes a unit tensor multiplied by the scalar $k$, intrinsic permeability, when isotropic permeability is assumed.
+where $\dot{\boldsymbol{w}}/n$ represents the relative velocity of the fluid, taking into account that $\dot\Box$ is the material time derivative of a general magnitude $\Box$ with respect to the solid; $\boldsymbol{\ddot{u}}$ denotes the solid phase acceleration, $\ddot{\boldsymbol{w}}/n$ is the relative acceleration of the fluid respect to the solid phase, $\boldsymbol{g}$ represents the external acceleration vector, $\mu_w$ denotes the dynamic viscosity of the water and $\boldsymbol{k}$ is the intrinsic permeability tensor, which becomes a unit tensor multiplied by the scalar $k$, intrinsic permeability, when isotropic permeability is assumed.
 
 Both linear momentum balance equations of the mixture and the fluid were presented by Zienkiewicz \textit{et al.} \cite{Zienkiewicz99} with the convective terms, which can be neglected in the present research as the vorticity is relatively small compared to the rest of the terms.
 
@@ -174,14 +174,15 @@ where $B$ is the volume of the spatial domain and $\delta B$ the boundary where 
 
 \subsection{Implicit time integration scheme: Newton-Raphson algorithm}
 \label{subsec:22}
-In the $u-w$ formulation each node contains both solid and fluid degrees of freedom, $\boldsymbol{u}$ and $\boldsymbol{w}$, whereas the pore pressure, $p_w$ is not considered as a degree of freedom, being calculated at the material point employing Eq.~\eqref{eq_uw15}, in contrast with the more traditional  $u-p_w$ formulation, where is considered directly as an additional nodal unknown. On the one hand, the imposition of impervious boundary conditions is a bit easier in the $u-w$ meanwhile the initial conditions require an initial calculation of the relative displacement of the water, $w$, when an initial pore pressure is assumed. This calculation is further explained in~\ref{ap:1}.
+In the $u-w$ formulation each node contains both solid and fluid degrees of freedom, $\boldsymbol{u}$ and $\boldsymbol{w}$, whereas the pore pressure, $p_w$ is not considered as a degree of freedom, being calculated at the material point employing Eq.~\eqref{eq_uw15}, in contrast with the more traditional  $u-p_w$ formulation, where is considered directly as an additional nodal unknown. On the one hand, 
+considering both the classic approach $u-p_w$ and the$ u-w$, the latter presents the advantage of much simpler imposition of the impervious boundary conditions, and the disadvantage of providing an initial value for $w$, when an initial field of $p_w$ is given. The required calculation is further explained in~\ref{ap:1}.
 
-In the proposed study, an axisymmetric 2D configuration is employed in order to represent the triaxial tests. As a two-dimensional problem, the nodal unknowns can be written as:
+In this study, we use axisymmetric 2D representations for classical triaxial tests. The nodal vectors of unknown can be expressed as:
  $$
  \boldsymbol{u}^*=
  \left[ u_x \quad  u_y \quad   w_x \quad  w_y \right]^T.
 $$
-After assembling the elementary matrices, the final system of equations can be simplified as
+After assembling the elementary matrices, the final system of equations can be written as
 \begin{equation}\label{eq_uw26}
  \boldsymbol{ R}_{k+1}  +  \boldsymbol{C}  \,   \boldsymbol{\dot{u}}_{k+1} +   \boldsymbol{M}   \, \boldsymbol {\ddot{u}}_{k+1}= \boldsymbol{P }_{k+1},
 \end{equation}
@@ -196,7 +197,7 @@ In order to solve Eq.~(\ref{eq_uw26}) in an implicit way, a traditional Newmark 
 &+& \boldsymbol {R}_{k+1}-\boldsymbol {P}_{k}-\Delta\boldsymbol {P}_{k+1}=\boldsymbol {0},
 \end{eqnarray}
 
-or  in the compact form:
+or  in a compact form:
 \begin{eqnarray} \label{eq_uw23}
 \boldsymbol{G}(\boldsymbol{\chi},\boldsymbol{\eta})&=&\boldsymbol{0},\\
 \mbox{where} \quad \boldsymbol{\chi}&=&\left[ \boldsymbol{\chi^u} ,\boldsymbol{\chi^w}\right]^{T} \quad  \mbox{is the deformation mapping}
@@ -221,11 +222,11 @@ where the $\alpha$-parameters are listed in Table~\ref{tab1} according to Wrigge
 	\end{tabular}
 \end{table}
 
-According to Wriggers~\cite{wriggers:08}, to solve the above non-linear equations, any Newton method  can be applied by using the following statement, after the linearization of $ \boldsymbol{\chi}$: 
+According to Wriggers~\cite{wriggers:08}, to solve the above non-linear equations, any Newton method  can be cast, after the linearization of $ \boldsymbol{\chi}$, as: 
 \begin{eqnarray} \label{eq_uw24}
 \boldsymbol{G}(\boldsymbol{\overline{\chi}},\boldsymbol{\eta})_{k+1}^{i}+D\boldsymbol{G}(\boldsymbol{\overline{\chi}},\boldsymbol{\eta})_{k+1}^{i}\cdot \Delta\boldsymbol{u}^{*i+1}_{k+1} &\cong & \boldsymbol{0},
 \end{eqnarray}
-where $\boldsymbol{\overline{\chi}}$ is the already linearized deformation mapping. Thus, the iterative procedure, taking into account the matrices that are involved in our problem, yields:
+where $\boldsymbol{\overline{\chi}}$ is the already linearized deformation mapping. Thus, the iterative scheme which results, taking into account the matrices that are involved in our problem, can be written as:
 \begin{eqnarray}\label{eq_uw32}
 \left[\alpha_1\boldsymbol {M}+\alpha_4\boldsymbol {C}+\boldsymbol {K}^{i}_{k+1}\right]\Delta\boldsymbol{u}^{i+1}_{k+1} &=& -\boldsymbol {G}(\boldsymbol {u}^{i}_{k+1}), \\
 \mbox{where}\;\; \boldsymbol {u}^{i+1}_{k+1} &=& \boldsymbol {u}^{i}_{k+1} + \Delta \boldsymbol {u}^{i+1}_{k+1}.  \nonumber 
@@ -234,9 +235,9 @@ where $\boldsymbol {K}$ is the tangential stiffness matrix:
 \begin{equation}\label{eq_uw31}
 \boldsymbol {K}(\boldsymbol {u}^{i}_{k+1})=\boldsymbol {K}^{i}_{k+1}=\left.\frac{\partial\boldsymbol {R}}{\partial \boldsymbol {u}}\right|_{\boldsymbol{u}^{i}_{k+1}}.
 \end{equation}
-and $i$ depicts the iteration index. The iteration finishes when  $\boldsymbol {G}^{i}_{k+1}$ is lower than a given tolerance.
+and $i$ depicts the iteration index. The iteration finishes when  $\boldsymbol {G}^{i}_{k+1}$ is smaller than a given tolerance.
 
-After applying the integration in time,  Eq.~(\ref{eq_uw19_2}) and Eq.~(\ref{eq_uw20_2}) are written at time $_{k+1}$ and transformed as follows:
+After applying the integration in time,  Eq.~(\ref{eq_uw19_2}) and Eq.~(\ref{eq_uw20_2}) are written at time $_{k+1}$ and result on:
 \begin{eqnarray} \label{eq_uw34}
 &&-\int_B \boldsymbol{ \sigma'}:\mbox{grad}(\delta\boldsymbol{u}) \, dv \; -\int_B  Q \, \mbox{div}(\boldsymbol{u}) \mbox{div}(\delta\boldsymbol{u}) \, dv  \nonumber \\ 
 && -\int_B  Q \, \mbox{div}(\boldsymbol{w}) \mbox{div}(\delta\boldsymbol{u}) \, dv \;  - \alpha_1 \int_B \left[\rho\boldsymbol{u}+\rho_w \boldsymbol{w}\right]\cdot\delta\boldsymbol{u} \, dv 
@@ -258,7 +259,7 @@ The results of the linearization process for  Eq.~(\ref{eq_uw34}) and Eq.(\ref{e
 %%%%%%%%%%%%%%%%
 \subsection{A note on spatial discretization}
 \label{subsec:23}
-The shape function employed is based that of Arroyo and Ortiz ~\cite{arroyo2006}, who defined exponential  functions based on the principle of  the local maximum entropy (LME).  For a node $a$, it reads,
+The shape function employed is based on the proposed by Arroyo and Ortiz ~\cite{arroyo2006}, who defined exponential  functions based on the principle of  the local maximum entropy (LME).  For a node $a$, it reads,
 \begin{equation} \label{eq_N1}
 N_a(\textbf{x})=\frac{\exp\left[ -\beta \; |\bf x-x_a|^2 +  \boldsymbol{\lambda}  \cdot  (x-x_a)         \right] } {Z(\textbf{x},\boldsymbol{\lambda}^*(\textbf{x}))},
 \end{equation}
@@ -288,9 +289,9 @@ where the superscript $p$ represents the material point where is calculated and 
 \begin{equation}
 \mathbf{F}_{k+1} = \Delta \mathbf{F}_{k+1} \mathbf{F}_{k} 
 \end{equation}
-where $k$ and $k+1$ depict the previous and the current step, respectively.
+where $k$ and $k+1$ refer to the previous and the current step, respectively.
 
-The methodology that is employed in this research reproduces the proposed by Navas~\textit{et al.}~\cite{Navas:17c} for the pore pressure and stress update. Therefore, following the work of Cuiti\~no and Ortiz \cite{cuitino:92}, the small strain measures $\boldsymbol{\varepsilon} = \frac{1}{2}\,\log\mathbf{b}$ and $\boldsymbol{\varepsilon}^w = \frac{1}{2}\,\log\mathbf{b}^w$ are considered for each phase, where $\mathbf{b}=\mathbf{F}\mathbf{F}^T$ and $\mathbf{b}^w=\mathbf{F}^w\mathbf{F}^{wT}$ are the left Cauchy-Green strain tensors for the solid skeleton and pore fluid, respectively.
+The methodology that is employed in this research is that proposed by Navas~\textit{et al.}~\cite{Navas:17c} for the pore pressure and stress update. Therefore, following the work of Cuiti\~no and Ortiz \cite{cuitino:92}, the small strain measures $\boldsymbol{\varepsilon} = \frac{1}{2}\,\log\mathbf{b}$ and $\boldsymbol{\varepsilon}^w = \frac{1}{2}\,\log\mathbf{b}^w$ are considered for each phase, where $\mathbf{b}=\mathbf{F}\mathbf{F}^T$ and $\mathbf{b}^w=\mathbf{F}^w\mathbf{F}^{wT}$ are the left Cauchy-Green strain tensors for the solid skeleton and pore fluid, respectively.
 
 Regarding the pore pressure, which comes from the mass conservation equation, Eq.~\eqref{eq_uw15}, it is calculated as:
 \begin{equation}
@@ -306,7 +307,7 @@ where the divergences of the displacements of both phases can be expressed as:
 
 The stress state update of the solid skeleton through a generalized plasticity model within a finite strain setting is clarify hereafter. 
 
-In order to develop a thermodynamically consistent finite deformation constitutive relation in the current configuration \cite{Borja1998}, the effective Kirchhoff stress tensor $\boldsymbol{\tau}'$ is considered as stress measure, which is defined as $\boldsymbol{\tau}'=J \boldsymbol{\sigma}'$ where $J=det(\mathbf{F})$ and $\boldsymbol{\sigma}'$ is the effective Cauchy stress tensor. Moreover, the small strain increment that induces the stress state update is defined by 
+In order to develop a thermodynamically consistent finite deformation constitutive relation in the current configuration \cite{Borja1998}, the effective Kirchhoff stress tensor $\boldsymbol{\tau}'$ is chosen as stress measure, which is defined as $\boldsymbol{\tau}'=J \boldsymbol{\sigma}'$ where $J=det(\mathbf{F})$ and $\boldsymbol{\sigma}'$ is the effective Cauchy stress tensor. Moreover, the small strain increment that induces the stress state update is defined by 
 
 \begin{equation}
 \Delta \boldsymbol{\varepsilon}= \frac{1}{2} (\log\mathbf{b}_{k+1}-\log\mathbf{b}_{k})  
@@ -323,9 +324,9 @@ The update driven by $\Delta \boldsymbol{\varepsilon}$  from $( \boldsymbol{\tau
 
 where $ \boldsymbol{n}$ and $ \boldsymbol{n}_g$ are the loading and plastic flow tensor directions, respectively, $H_{L/U}$ are the scalar functions defined as the plastic moduli for loading and unloading, $\psi$ is a free energy function while $\boldsymbol{\tau}'$ is the effective Kirchhoff stress tensor and $\boldsymbol{D}^e$ is the elastic tangent tensor. An appropriate selection of $ \boldsymbol{n}$, $ \boldsymbol{n}_g$, $H_{L/U}$ and $\psi$ will lead to different models within the generalized plasticity framework.
 
-Once the plastic strains increment   $\Delta\boldsymbol{\varepsilon}^p$ are computed by (\ref{Eq5}), then the free energy function $\psi$ is updated with the new elastic small strain $\boldsymbol{\varepsilon}^e_{k+1}$, which is computed by (\ref{Eq4}). Then, by differentiation of the free energy function, the current effective stress $\boldsymbol{\tau}'_{k+1}$ is obtained. Finally, as the internal forces in (\ref{eq_uw34}) are computed through the effective Cauchy stress tensor, this one is computed by $\boldsymbol{\sigma}'_{k+1}= \frac{1}{J}\boldsymbol{\tau}'_{k+1}$.
+Once the plastic strain increment   $\Delta\boldsymbol{\varepsilon}^p$ is computed by (\ref{Eq5}), then the free energy function $\psi$ is updated with the new elastic small strain $\boldsymbol{\varepsilon}^e_{k+1}$, which is computed by (\ref{Eq4}). Then, by differentiation of the free energy function, the current effective stress $\boldsymbol{\tau}'_{k+1}$ is obtained. Finally, as the internal forces in (\ref{eq_uw34}) are computed through the effective Cauchy stress tensor, this one is computed by $\boldsymbol{\sigma}'_{k+1}= \frac{1}{J}\boldsymbol{\tau}'_{k+1}$.
 
-Following the standard generalized plasticity framework, an isotropic material response is assumed. Therefore, the constitutive equation will be written in terms of the effective Kirchhoff stress tensor invariants  $p', q, \theta $ and the work-conjugate strain invariants $\varepsilon_v, \varepsilon_s, \theta^{\varepsilon}$ . These invariants are defined in the usual way as
+We will assume that material behavior is isotropic, and described by the classical Generalized Plasticity framework. Therefore, the constitutive equation will be written in terms of the effective Kirchhoff stress tensor invariants  $p', q, \theta $ and the work-conjugate strain invariants $\varepsilon_v, \varepsilon_s, \theta^{\varepsilon}$ . These invariants are defined in the usual way as
 
 \begin{eqnarray}
 p' &=&-\frac{1}{3}I_1 \label{Eq8}\\ 
@@ -333,7 +334,7 @@ q &=&(3J_2)^{1/2}\label{Eq9} \\
 \theta &=& \frac{1}{3} \sin^{-1}\left(\frac{-3\sqrt{3}}{2}\frac{J_3}{J_2^{3/2}}\right)\label{Eq10} 
 \end{eqnarray}
 
-where $I_1$ is the first invariant of the effective Kirchhoff stress tensor $\boldsymbol{\tau}'$,  while $J_2$ and $J_3$ are the second and third invariant of the deviatoric Kirchhoff stress tensor $\boldsymbol{s}=\boldsymbol{\tau}'-p\boldsymbol{I}$ . Negative sign in Equation \eqref{Eq8} stands for positive values of $p'$ in compression. The strain invariants $\varepsilon_v, \varepsilon_s, \theta^{\varepsilon}$ are defined by
+where $I_1$ is the first invariant of the effective Kirchhoff stress tensor $\boldsymbol{\tau}'$,  while $J_2$ and $J_3$ are the second and third invariant of the deviatoric Kirchhoff stress tensor $\boldsymbol{s}=\boldsymbol{\tau}'-p\boldsymbol{I}$ . The negative sign in Equation \eqref{Eq8} stands for positive values of $p'$ in compression. The strain invariants $\varepsilon_v, \varepsilon_s, \theta^{\varepsilon}$ are defined by
 
 
 \begin{eqnarray}
@@ -395,9 +396,9 @@ where the components are described in Table \ref{tab2}.
 	\end{tabular}
 \end{table}
 
-Similar expressions are derived for $d_{g}$ and $d_{f}$. $d_{g}$ is obtained from laboratory tests as a function of dilatancy, represented by  $d_{g}=\left(1+\alpha_{g}\right)\left(M_{g}-\eta\right)$ and, $d_{f}$ has a similar expression, represented by   $d_{f}=\left(1+\alpha_{f}\right)\left(M_{f}-\eta\right)$. The parameter $M_{g}$ is the slope of the critical state lines in the q-p plane. $M_{f}$ is a parameter related to $M_{g}$ through the relative density $D_r = M_{f} / M_{g}$. $\alpha_{g}$ and $\alpha_{f}$ are model parameters. $\eta$ depicts the current relation between $q/p$. As we see in Table~\ref{tab2}, the deviatoric component can take positive or negative sign, which depends on the sign of the invariant $q$, if it is in extension (negative) or compression (positive).
+Similar expressions are derived for $d_{g}$ and $d_{f}$. The former is obtained from laboratory tests as a function of dilatancy, represented by  $d_{g}=\left(1+\alpha_{g}\right)\left(M_{g}-\eta\right)$ and, $d_{f}$ has a similar expression, represented by   $d_{f}=\left(1+\alpha_{f}\right)\left(M_{f}-\eta\right)$. The parameter $M_{g}$ is the slope of the critical state lines in the q-p plane. $M_{f}$ is a parameter related to $M_{g}$ through the relative density $D_r = M_{f} / M_{g}$. $\alpha_{g}$ and $\alpha_{f}$ are model parameters. $\eta$ depicts the current relation between $q/p$. As we see in Table~\ref{tab2}, the deviatoric component can take positive or negative sign, which depends on the sign of the invariant $q$, if it is in extension (negative) or compression (positive).
 
- On the other hand, the plastic moduli $H_{L / U}$ for loading and unloading are defined in a different way depending on the loading or unloading conditions. For loading $H_L$ the following applies :
+ On the other hand, the plastic moduli, $H_{L / U}$, are defined in a different way depending on the loading or unloading conditions. For loading $H_L$ the following applies :
 \begin{equation}
 H=p\,H_{0}  H_{f}\left(H_{v}+H_{s}\right) H_{\mathrm{DM}}
 \end{equation}\label{Eq_H}
@@ -406,7 +407,7 @@ where $H_0$ is a material parameter that Schrefler and coworkers~\cite{Santagiul
 H_{0}=\frac{1+e_{0}}{\lambda-k}=\frac{1}{\lambda^*-k^*}
 \end{equation}
 
-The rest of the parameters are defined following:
+The rest of the parameters are defined as:
 \begin{equation}
 \begin{aligned} H_{\mathrm{f}} &=\left(1-\frac{\eta}{\eta_{\mathrm{f}}}\right)^{4} \\ 
 H_{v} &=\left(1-\eta / M_{g}\right) \\ 
@@ -429,7 +430,7 @@ $\zeta_{\mathrm{max}}$ is the maximum value of $\zeta$ along the computation and
 
 \section{Numerical Application: triaxial soil testing}
 \label{sec:4}
-The validation of the numerical implementation consists of the simulation of several tests, under monotonic loading conditions, of a determined soil, comparing to reference undrained consolidated triaxial compression test results. Then, the effect of velocity in consolidated triaxial compression tests with drained boundary conditions is analyzed. These results are presented following.
+We will validate the proposed formulation by using a series of benchmark tests consisting of (i) undrained consolidated triaxial tests, (ii) consolidation tests, and (iii) cyclic tests. The methodology we propose is based on a formulation allowing for large relative displacements between soil and water, where the rate at which load is applied plays a paramount role. We will run our model and compare the results obtained in computations with those of classical triaxial tests. These results are presented next.
 
 \subsection{Monotonic consolidated triaxial compression test: undrained boundary conditions}
 \label{sec:41}
@@ -439,12 +440,12 @@ The proposed methodology has to be validated first. A triaxial test with dynamic
 \begin{figure}
 \centering
 \includegraphics[width=0.85\textwidth]{Figs/Geo.pdf}
-\caption{Scheme of the geometry employed in the triaxial test modeling.}
+\caption{Scheme of the geometry employed in modeling the triaxial test.}
 \label{fig_Geo}
 \end{figure}
 %%%%%%
 
-Boundary $\Gamma_4$ will change depending on the problem to be modeled. About the soil, either the displacement can be imposed or the pressure, if we want to reach a desire value of the $q$. On the other hand, the impermeability of this boundary will be given due to the drained or undrained condition of the reproduced test.
+Boundary $\Gamma_4$ will change depending on the problem to be modeled. About the soil, either the displacement can be imposed or the pressure, if we want to reach a desired value of the $q$. On the other hand, the impermeability of this boundary will be given due to the drained or undrained condition of the reproduced test. All simulations have been carried out with a discretization of 66 nodes and 200 material points.
 
 The first test to validate is an undrained monotonic triaxial test. The material employed within these tests was a sand studied by Castro~\cite{Castro69} in 1969 that, afterwards, was calibrated for the Generalized Plasticity model~\cite{PastorZC:90,Zienkiewicz99}. The parameters that were calibrated are presented in Table~\ref{tab3}. Four different sands are studied, depending on the density state.
 
